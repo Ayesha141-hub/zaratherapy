@@ -1,0 +1,486 @@
+/*======================Universal======================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+/*======================Universal Fonts and Colors======================*/
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Lora', serif;
+}
+
+:root {
+    --background-color: #e5f8e5;
+    --primary-color: #A8D5BA;
+    --accent-color: #A7C7E7;
+    --heading-color: #2C6E49;
+    --text-color: #4A4A4A;
+    --button-color: #6CA6C1;
+    --button-hover: #4F91B8;
+    --border-color: #DCEAE3;
+    --text-white: #ffff;
+}
+
+/*======================Appoinment page introduction======================*/
+.appt-intro {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    /* background-color: #f4f4f9; */
+    background: linear-gradient(90deg, #a1defa, #9eecc0);
+    padding: 40px 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.appt-intro p {
+    font-family: var(--text-font);
+}
+
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 35px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #5797f7, #5add93);
+    border-radius: 2px;
+}
+
+.appt-intro p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* ========== Responsive Adjustments ========== */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .appt-intro {
+        padding: 30px 15px;
+    }
+
+    .appt-intro .heading {
+        font-size: 30px;
+    }
+
+    .appt-intro p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .appt-intro {
+        padding: 25px 10px;
+    }
+
+    .appt-intro .heading {
+        font-size: 26px;
+    }
+
+    .appt-intro p {
+        font-size: 15px;
+    }
+}
+
+/* Extra Small Devices (340px and below) */
+@media screen and (max-width: 340px) {
+    .appt-intro {
+        padding: 20px 8px;
+    }
+
+    .appt-intro .heading {
+        font-size: 22px;
+    }
+
+    .appt-intro p {
+        font-size: 14px;
+    }
+}
+
+/*======================Appoinment page introduction complete======================*/
+/*======================Appoinment page Form======================*/
+.form {
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    padding: 20px 100px;
+    border-radius: 15px;
+    border: 2px solid #dceae3;
+    width: 900px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(233, 247, 253);
+    border: 2px solid skyblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #858282;
+    /* border: none; */
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    padding: 12px 50px;
+    font-size: 18px;
+    background-color: #6ca6c1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #4f91b8;
+}
+/* ========== Responsive Adjustments ========== */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .form {
+        top: 100px;
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 20px 50px;
+    }
+
+    input,
+    select {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .submit-button {
+        font-size: 16px;
+        padding: 10px 40px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .form {
+        top: 80px;
+        padding: 15px;
+    }
+
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+}
+
+/* Extra Small Devices (340px and below) */
+@media screen and (max-width: 340px) {
+    .form {
+        top: 60px;
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input,
+    select {
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .submit-button {
+        font-size: 13px;
+        padding: 6px 20px;
+    }
+}
+
+
+.contact-container {
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    width: 900px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(233, 247, 253);
+    border: 2px solid skyblue;
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+.contact p {
+    color: #4a4a4a;
+    font-family: var(--text-font);
+    font-size: 18px;
+}
+/* ========== Responsive Adjustments ========== */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        top: 100px;
+        padding: 20px;
+    }
+
+    .contact {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .contact-container {
+        top: 80px;
+        padding: 15px;
+    }
+
+    .contact {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .contact p {
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Devices (340px and below) */
+@media screen and (max-width: 340px) {
+    .contact-container {
+        top: 60px;
+        padding: 10px;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact p {
+        font-size: 13px;
+    }
+}
+
+
+.faq-section {
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.accordion-button {
+    background-color: #8dc0ec !important;
+    color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #6aa5d8 !important;
+    color: white !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.cta-section {
+    position: relative;
+    top: 130px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #e5f8ef;
+}
+
+.cta-section p {
+    font-size: 20px;
+    color: #4a4a4a;
+    font-family: var(--text-font);
+}
+
+.cta-button,
+.call-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: var(--button-color);
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.call-button {
+    margin-left: 10px;
+}
+
+.cta-button:hover,
+.call-button:hover {
+    background: var(--button-hover);
+}
+/* ========== Responsive Adjustments ========== */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 100%;
+        /* max-width: 600px; */
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .faq-section {
+        top: 100px;
+        padding: 20px;
+    }
+
+    .cta-section {
+        top: 100px;
+        padding: 20px;
+    }
+
+    .cta-section p {
+        font-size: 18px;
+    }
+
+    .cta-button,
+    .call-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .contact {
+        width: 90%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .faq-section {
+        top: 80px;
+    }
+
+    .cta-section {
+        top: 80px;
+        padding: 15px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+    }
+
+    .cta-button,
+    .call-button {
+        font-size: 0.85rem;
+        padding: 8px 18px;
+    }
+
+    .call-button {
+        margin-left: 5px;
+    }
+}
+
+/* Extra Small Devices (340px and below) */
+@media screen and (max-width: 340px) {
+    .contact {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .faq-section {
+        top: 60px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .cta-section {
+        top: 60px;
+        padding: 10px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+    }
+
+    .cta-button,
+    .call-button {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+        border-radius: 10px;
+    }
+}

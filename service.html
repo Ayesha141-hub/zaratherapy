@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------Google fonts link------------------------>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!----------------------Font awesome icons link------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!------------------- Bootstrap CSS ------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!----------------------Style sheet------------------------>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <!----------------------Website's Icon------------------------>
+    <link rel="icon" href="Images/Zara-Logo.png">
+    <!----------------------Websites's Title------------------------>
+    <title>Zara Therapy Clinic</title>
+</head>
+
+<body>
+    <!-- back to top button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+    <!--preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+     <!----------------------Header start------------------------>
+     <header>
+        <div class="headers">
+            <div class="head-logo">
+                <a href="index.html" target="_blank"><img src="Images/Zara-Logo.png" alt="ZTC-logo"></a>
+                <span id="brand_name"></span>
+            </div>
+            <div class="head-search">
+                <input class="inp-search" type="text" placeholder="Search">
+                <div class="s-icon">
+                    <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----------------------Nav-bar start------------------------>
+    <nav>
+        <div class="nav-bar">
+            <div class="navlink">
+                <ul class="nav-linkss ps-0 m-0">
+                    <li><a class="hov" href="index.html" target="_blank">Home</a></li>
+                    <li><a class="hov" href="about.html" target="_blank">About</a></li>
+                       <!---------Product dropdown-------->
+                       <li class="dropdown1">
+                        <a class="hov" href="products.html" target="_blank">Products</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="products.html#journals" target="_blank">Journals</a></li>
+                            <li><a href="products.html#relaxation" target="_blank">Relaxation</a></li>
+                            <li><a href="products.html#resources" target="_blank">Resources</a></li>
+                        </ul>
+                    </li>
+                    <!---------Services dropdown-------->
+                    <li class="dropdown1">
+                        <a class="hov active" href="#">Services</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="#family-counseling">Family</a></li>
+                            <li><a href="#couple-counseling">Couple</a></li>
+                            <li><a href="#teen-counseling">Youth</a></li>
+                        </ul>
+                    </li>
+                    <li class="hov-hide01"><a class="hov" href="discountandoffers.html" target="_blank">Offers and
+                            Discounts</a></li>
+                    <li class="hov-hide01"><a class="hov" href="contact.html" target="_blank">Contact Us</a></li>
+                    <li class="hov-hide02"><a href="discountandoffers.html" target="_blank">Best offer</a></li>
+                    <li class="hov-hide02"><a href="contact.html" target="_blank">Reach Out</a></li>
+                </ul>
+                <!---------Appoinment button-------->
+                <div class="apt-btn">
+                    <button><a href="appoinment.html" target="_blank">Appoinment</a></button>
+                </div>
+            </div>
+            <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+    <!----------------------Nav bar complete------------------------>
+
+    <!------------------------Highlight of services ------------------------>
+    <section class="service-highlight" data-aos="fade-up">
+        <div class="overlay1">
+            <h1>A Safe Space for Your Well-Being</h1>
+            <div class="cta-buttons">
+                <a href="appoinment.html" class="btn" target="_blank">Book Appointment</a>
+                <a href="contact.html" class="btn btn-alt" target="_blank">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------Short description of services ------------------------>
+    <section class="services-section" data-aos="fade-up">
+        <div class="services-container">
+            <h2 class="heading">Our Key Services</h2>
+            <div class="row1">
+                <div class="ser01 service" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ser-description">
+                        <h2>Family Counseling</h2>
+                        <button type="button" class="ser-btn"><a href="#family-counseling">Learn More &#8594;</a></button>
+                    </div>
+                </div>
+                <div class="ser02 service" data-aos="fade-up" data-aos-delay="200">
+                    <div class="ser-description">
+                        <h2 class="text-center">Teen & Youth Counseling</h2>
+                        <button type="button" class="ser-btn"><a href="#teen-counseling">Learn More &#8594;</a></button>
+                    </div>
+                </div>
+                <div class="ser03 service" data-aos="fade-up" data-aos-delay="300">
+                    <div class="ser-description">
+                        <h2>Couple Counseling</h2>
+                        <button type="button" class="ser-btn"><a href="#couple-counseling">Learn More &#8594;</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="ser04 service" data-aos="fade-up" data-aos-delay="400">
+                    <div class="ser-description">
+                        <h2 class="text-center">Stress Management counseling</h2>
+                        <button type="button" class="ser-btn"><a href="#stress-counseling">Learn More &#8594;</a></button>
+                    </div>
+                </div>
+                <div class="ser05 service" data-aos="fade-up" data-aos-delay="500">
+                    <div class="ser-description">
+                        <h2 class="text-center">Cognitive Behavioral Therapy </h2>
+                        <button type="button" class="ser-btn"><a href="#cbt-counseling">Learn More &#8594;</a></button>
+                    </div>
+                </div>
+                <div class="ser06 service" data-aos="fade-up" data-aos-delay="600">
+                    <div class="ser-description">
+                        <h2 class="text-center">Mental-health Counseling</h2>
+                        <button type="button" class="ser-btn"><a href="#mental-counseling">Learn More &#8594;</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------Family Counseling Section ------------------------>
+    <div class="main-heading" data-aos="fade-up" id="family-counseling">
+        <h1>"Family-Counseling"</h1>
+    </div>
+    <section class="family-counseling pb-5" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <h1 class="heading">Family-Counseling</h1>
+                    <p class="fs-5">
+                        Family counseling helps resolve conflicts, improve communication, and strengthen relationships.
+                        Whether facing stress, parenting challenges, or emotional distress, our experts provide guidance
+                        for a healthier family dynamic.
+                    </p>
+                    <ul>
+                        <li><span><strong>Improved Communication –</strong> Helps family members express their thoughts
+                                and feelings openly and effectively.</span></li>
+                        <li><span><strong>Conflict Resolution –</strong> Provides strategies to resolve disagreements in
+                                a healthy and constructive manner.</span></li>
+                        <li><span><strong>Stronger Relationships –</strong> Encourages bonding and understanding between
+                                family members.</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="Images/family-therapy1.jpg" class="img-fluid rounded main-img"
+                                alt="Family Therapy">
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column gap-3">
+                            <img src="Images/family-therapy2.jpg" class="img-fluid rounded small-img" data-aos="fade-up" data-aos-delay="200"
+                                alt="Therapy Session">
+                            <img src="Images/family-therapy3.jpg" class="img-fluid rounded small-img" data-aos="fade-up" data-aos-delay="300"
+                                alt="Family Support">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------Doctors Suggestion Section ------------------------>
+    <section class="doctors-suggestion" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="d-head">
+                <h2 class="heading">Our Expert Doctors for Family Counseling</h2>
+                <p class="subheading">Meet our experienced doctors who specialize in family counseling and related
+                    issues.</p>
+            </div>
+            <div class="doctors-list">
+                <!-- Doctor 1 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Hina-Javed.jpg" alt="Dr. Hina-Javed">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Hina-Javed</h3>
+                        <p class="specialization">Family Counseling Specialist</p>
+                        <p class="experience">10+ years of experience</p>
+                        <p class="description">Dr. Hina specializes in resolving family conflicts and improving
+                            communication.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-11.html" target="_blank" class="contact-btn">Contact Dr. Hina</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Hassan-Raza.jpg" alt="Dr. Hassan-Raza">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Hassan-Raza</h3>
+                        <p class="specialization">Child and Teen Counseling Expert</p>
+                        <p class="experience">8+ years of experience</p>
+                        <p class="description">Dr. Hassan focuses on helping teens and children with emotional and
+                            behavioral issues.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-20.html" target="_blank" class="contact-btn">Contact Dr. Hassan</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Amina-Tariq.jpg" alt="Dr. Amina-Tariq">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Amina-Tariq</h3>
+                        <p class="specialization">Couples Therapy Specialist</p>
+                        <p class="experience">12+ years of experience</p>
+                        <p class="description">Dr. Amina helps couples build stronger and healthier relationships.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-18.html" target="_blank" class="contact-btn">Contact Dr. Amina</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------Teen Counseling Section ------------------------>
+    <div class="main-heading" data-aos="fade-up" id="teen-counseling">
+        <h1>"Teen-Counseling"</h1>
+    </div>
+    <section class="teen-counseling" data-aos="fade-up">
+        <div class="teen-container container-xl">
+            <div class="row gy-4">
+                <!-- Left Side: Pictures -->
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <!-- First Row: 2 Pictures -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="Images/child-therapy4.jpg" class="img-fluid rounded shadow-lg" alt="Teen Therapy">
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <img src="Images/child-therapy2.jpg" class="img-fluid rounded shadow-lg" alt="Teen Support">
+                        </div>
+                        <!-- Second Row: 2 Pictures -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <img src="Images/child-therapy3.jpg" class="img-fluid rounded shadow-lg"
+                                alt="Youth Counseling">
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <img src="Images/child-therapy1.jpg" class="img-fluid rounded shadow-lg" alt="Teen Growth">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Description -->
+                <div class="col-lg-6">
+                    <div class="Description001">
+                        <h1 class="heading">Teen and Youth Counseling</h1>
+                        <p class="fs-5">
+                            Teen and youth counseling helps adolescents navigate the challenges of growing up, manage
+                            stress, and build healthy relationships.
+                            Our experienced counselors provide support for mental health, self-esteem, and personal
+                            growth,
+                            helping young people thrive in their journey to adulthood.
+                        </p>
+                        <ul>
+                            <li><span><strong>Emotional Support –</strong> Helps teens manage emotions and cope with
+                                    stress,
+                                    anxiety, and depression.</span></li>
+                            <li><span><strong>Building Self-Esteem –</strong> Encourages positive self-image and
+                                    self-worth
+                                    in young individuals.</span></li>
+                            <li><span><strong>Improved Communication –</strong> Helps teens communicate openly with
+                                    parents,
+                                    peers, and mentors.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doctors-suggestion1" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="d-head">
+                <h2 class="heading">Our expert Doctors for Teen & Youth Counselors</h2>
+                <p class="subheading">Meet our specialized counselors dedicated to helping teens and young adults
+                    overcome challenges.</p>
+            </div>
+            <div class="doctors-list">
+                <!-- Counselor 1 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Faisal-Khan.jpg" alt="Dr. Faisal-Khan">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Faisal-Khan</h3>
+                        <p class="specialization">Teen Mental Health Specialist</p>
+                        <p class="experience">10+ years of experience</p>
+                        <p class="description">Dr. Faisal helps teens navigate anxiety, depression, and emotional
+                            well-being.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-19.html" target="_blank" class="contact-btn">Contact Dr. Faisal-Khan</a>
+                    </div>
+                </div>
+
+                <!-- Counselor 2 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Faisal-Raza.jpg" alt="Dr. Faisal-Raza">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Faisal-Raza</h3>
+                        <p class="specialization">Youth Behavioral Therapy Expert</p>
+                        <p class="experience">8+ years of experience</p>
+                        <p class="description">Dr. Faisal specializes in helping young individuals deal with stress,
+                            peer
+                            pressure, and identity issues.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-07.html" target="_blank" class="contact-btn">Contact Dr. Faisal</a>
+                    </div>
+                </div>
+
+                <!-- Counselor 3 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Umar-Farooq.jpg" alt="Dr. Umar-Farooq">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Umar-Farooq</h3>
+                        <p class="specialization">Adolescent Growth & Wellness Specialist</p>
+                        <p class="experience">12+ years of experience</p>
+                        <p class="description">Dr. Umar guides teens and young adults in building confidence,
+                            self-esteem, and coping skills.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-03.html" target="_blank" class="contact-btn">Contact Dr. Umar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Couple counseling section -->
+    <div class="main-heading" data-aos="fade-up" id="couple-counseling">
+        <h1>"Couple-Counseling"</h1>
+    </div>
+    <section class="couple-counseling pb-5" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="row gy-4">
+                <!-- Left Side: Description -->
+                <div class="col-lg-6">
+                    <h1 class="heading">Couple-Counseling</h1>
+                    <p class="fs-5">
+                        Couples counseling helps partners strengthen their bond, improve communication, and navigate
+                        relationship challenges.
+                        Whether dealing with conflicts, trust issues, or emotional distance, our experts provide
+                        guidance for a healthier and more fulfilling relationship.
+                    </p>
+                    <ul>
+                        <li><span><strong>Enhanced Communication –</strong> Helps partners express their feelings and
+                                needs openly and effectively.</span></li>
+                        <li><span><strong>Conflict Resolution –</strong> Provides healthy strategies to manage
+                                disagreements and rebuild trust.</span></li>
+                        <li><span><strong>Deeper Connection –</strong> Encourages emotional intimacy, understanding, and
+                                long-term relationship growth.</span></li>
+                    </ul>
+
+                </div>
+
+                <!-- Right Side: 4 Pictures -->
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <!-- First Row: 2 Pictures -->
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="Images/couple therapy3.jpg" class="img-fluid rounded" alt="Couple Therapy">
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                            <img src="Images/coupletherapy4.jpg" class="img-fluid rounded" alt="Therapy Session">
+                        </div>
+                        <!-- Second Row: 2 Pictures -->
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                            <img src="Images/couple therapy2.jpg" class="img-fluid rounded" alt="Couple Support">
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                            <img src="Images/couple-therapy1.jpg" class="img-fluid rounded" alt="couples Support">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doctors-suggestion2" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="d-head">
+                <h2 class="heading">Our Expert Doctors for Couple Counseling</h2>
+                <p class="subheading">Meet our experienced doctors who specialize in Couple counseling and related
+                    issues.</p>
+            </div>
+            <div class="doctors-list">
+                <!-- Doctor 1 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Amina-Siddiqui.jpg" alt="Dr. Amina-Siddiqui">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Amina-Siddiqui</h3>
+                        <p class="specialization">Family Counseling Specialist</p>
+                        <p class="experience">10+ years of experience</p>
+                        <p class="description">Dr. Amina specializes in resolving family conflicts and improving
+                            communication.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-09.html" target="_blank" class="contact-btn">Contact Dr. Amina</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Fatima-Hassan.jpg" alt="Dr. Fatima-Hassan">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Fatima-Hassan</h3>
+                        <p class="specialization">Child and Teen Counseling Expert</p>
+                        <p class="experience">8+ years of experience</p>
+                        <p class="description">Dr. Fatima is a compassionate and experienced Counsellor specializing in
+                            relationship and emotional well-being.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-10.html" target="_blank" class="contact-btn">Contact Dr. Fatima</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Azaan-Sikander.jpg" alt="Dr. Azaan-Sikander">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Azaan-Sikander</h3>
+                        <p class="specialization">Couples Therapy Specialist</p>
+                        <p class="experience">12+ years of experience</p>
+                        <p class="description">Dr. Azaan helps couples build stronger and healthier relationships.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-12.html" target="_blank" class="contact-btn">Contact Dr. Azaan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------Stress  Counseling Section ------------------------>
+    <div class="main-heading" data-aos="fade-up" id="stress-counseling">
+        <h1>"Stress & Anxiety Counseling"</h1>
+    </div>
+    <section class="stress-counseling pb-5" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="Images/blog-1.jpg" class="img-fluid rounded main-img" alt="Family Therapy">
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column gap-3">
+                            <img src="Images/blog-3.jpg" class="img-fluid rounded small-img" data-aos="fade-up" data-aos-delay="200" alt="Therapy Session">
+                            <img src="Images/blog-4.jpg" class="img-fluid rounded small-img" data-aos="fade-up" data-aos-delay="300" alt="Family Support">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="heading">Stress & Anxiety Counseling</h1>
+                    <p class="fs-5">
+                        Stress & Anxiety Counseling helps individuals manage overwhelming emotions, reduce stress
+                        levels, and regain control over their mental well-being.
+                        Whether facing work pressure, personal struggles, or anxiety disorders, our experts provide
+                        effective coping strategies for a balanced and healthier life.
+                    </p>
+                    <ul>
+                        <li><span><strong>Effective Stress Management –</strong> Learn techniques to reduce daily stress
+                                and improve overall well-being.</span></li>
+                        <li><span><strong>Anxiety Reduction –</strong> Develop coping mechanisms to handle anxiety in
+                                personal and professional life.</span></li>
+                        <li><span><strong>Emotional Resilience –</strong> Build mental strength to navigate challenges
+                                with confidence and calmness.</span></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="doctors-suggestion3" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="d-head">
+                <h2 class="heading">Our Expert Doctors for Stress & Anxiety Counseling</h2>
+                <p class="subheading">Meet our experienced specialists who help individuals manage stress, overcome
+                    anxiety, and achieve mental well-being.</p>
+            </div>
+            <div class="doctors-list">
+                <!-- Doctor 1 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Ahmed-Khan.png" alt="Dr. Ahmed-Khan">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Ahmed-Khan</h3>
+                        <p class="specialization">Stress Management Expert</p>
+                        <p class="experience">15+ years of experience</p>
+                        <p class="description">Dr. Ahmed specializes in helping individuals manage stress through
+                            mindfulness, relaxation techniques, and cognitive strategies.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-01.html" target="_blank" class="contact-btn">Contact Dr. Ahmed</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Ayesha-Butt.jpg" alt="Dr. Ayesha-Butt">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Ayesha-Butt</h3>
+                        <p class="specialization">Anxiety Disorder Specialist</p>
+                        <p class="experience">10+ years of experience</p>
+                        <p class="description">Dr. Ayesha provides therapy and personalized treatment plans for
+                            individuals struggling with anxiety and panic disorders.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-02.html" target="_blank" class="contact-btn">Contact Dr. Ayesha</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Sadia-Malik.jpg" alt="Dr. Sadia-Malik">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sadia-Malik</h3>
+                        <p class="specialization">Cognitive Behavioral Therapist</p>
+                        <p class="experience">12+ years of experience</p>
+                        <p class="description">Dr. Sadia helps patients overcome anxiety using evidence-based CBT
+                            techniques to change negative thought patterns.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-04.html" target="_blank" class="contact-btn">Contact Dr. Sadia</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!------------------------Cognitive Therapy Section ------------------------>
+    <div class="main-heading" data-aos="fade-up"  id="cbt-counseling">
+        <h1>"Cognitive Behavioral Therapy"</h1>
+    </div>
+    <section class="CognitiveBehavioral-Therapy pb-5" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <h1 class="heading">Cognitive Behavioral Therapy</h1>
+                    <p class="fs-5">
+                        Cognitive Behavioral Therapy (CBT) helps individuals identify and change negative thought
+                        patterns and behaviors.
+                        Whether dealing with anxiety, depression, or stress, our experts provide practical tools to
+                        improve mental well-being
+                        and foster a positive mindset.
+                    </p>
+                    <ul>
+                        <li>
+                            <span>
+                                <strong>Identify Negative Thoughts –</strong> Learn to recognize and challenge unhelpful
+                                or distorted thinking patterns.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <strong>Behavioral Change –</strong> Develop strategies to replace negative behaviors
+                                with positive, constructive actions.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <strong>Emotional Regulation –</strong> Gain skills to manage emotions effectively and
+                                reduce stress or anxiety.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="Images/blog-2.jpg" class="img-fluid rounded main-img" alt="Family Therapy">
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column gap-3">
+                            <img src="Images/cbt1.jpg" class="img-fluid rounded small-img" data-aos="fade-up" data-aos-delay="200" alt="Therapy Session">
+                            <img src="Images/cbt2.jpg" class="img-fluid rounded small-img" data-aos="fade-up" data-aos-delay="300" alt="Family Support">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------Doctors Suggestion Section ------------------------>
+    <section class="doctors-suggestion" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="d-head">
+                <h2 class="heading">Our Expert Doctors for Cognitive Behavioral Therapy</h2>
+                <p class="subheading">Meet our experienced therapists who specialize in Cognitive Behavioral Therapy to
+                    help individuals manage negative thought patterns and improve mental well-being.</p>
+            </div>
+            <div class="doctors-list">
+                <!-- Doctor 1 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Kamran-Zafar.jpg" alt="Dr.Kamran-Zafar">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Kamran-Zafar</h3>
+                        <p class="specialization">CBT Specialist</p>
+                        <p class="experience">15+ years of experience</p>
+                        <p class="description">Dr. Kamran helps individuals reframe negative thoughts and develop
+                            coping strategies for anxiety and depression.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-13.html" target="_blank" class="contact-btn">Contact Dr. Kamran</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Farah-Anwar.jpg" alt="Dr. Farah-Anwar">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Farah-Anwar</h3>
+                        <p class="specialization">Behavioral Therapy Expert</p>
+                        <p class="experience">10+ years of experience</p>
+                        <p class="description">Dr. Farah specializes in treating anxiety disorders, PTSD, and phobias
+                            through evidence-based CBT techniques.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-14.html" target="_blank" class="contact-btn">Contact Dr. Farah</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Saira-Iqbal.jpg" alt="Dr. Saira-Iqbal">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Saira-Iqbal</h3>
+                        <p class="specialization">Cognitive Restructuring Specialist</p>
+                        <p class="experience">12+ years of experience</p>
+                        <p class="description">Dr. Saira helps patients overcome depression and stress by modifying
+                            thought patterns and behaviors.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-15.html" target="_blank" class="contact-btn">Contact Dr. Saira</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------------------Mental-Wellness Counseling Section ------------------------>
+    <div class="main-heading" data-aos="fade-up" id="mental-counseling">
+        <h1>"Mental-health Counseling"</h1>
+    </div>
+    <section class="stress-counseling pb-5" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="Images/mental03.jpg" class="img-fluid rounded main-img" alt="Family Therapy">
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column gap-3">
+                            <img src="Images/mental02.jpg" class="img-fluid rounded small-img" data-aos="fade-up" data-aos-delay="200" alt="Therapy Session">
+                            <img src="Images/mental01.jpg" class="img-fluid rounded small-img" data-aos="fade-up" data-aos-delay="300" alt="Family Support">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="heading">Mental-health Counseling</h1>
+                    <p class="fs-5">
+                        Mental Health Counseling provides individuals with the support and tools needed to navigate
+                        emotional challenges, enhance self-awareness, and improve overall psychological well-being.
+                        Whether dealing with stress, trauma, or mental health conditions, our experts offer
+                        compassionate guidance to foster resilience and emotional balance.
+                    </p>
+                    <ul>
+                        <li><span><strong>Improved Emotional Well-being –</strong> Learn strategies to manage emotions
+                                effectively and achieve a healthier state of mind.</span></li>
+                        <li><span><strong>Coping with Mental Health Challenges –</strong> Develop techniques to address
+                                anxiety, depression, and other psychological concerns.</span></li>
+                        <li><span><strong>Resilience and Self-Growth –</strong> Build the mental strength needed to
+                                overcome obstacles and lead a fulfilling life.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doctors-suggestion3" data-aos="fade-up">
+        <div class="container-xl">
+            <div class="d-head">
+                <h2 class="heading">Our Expert Doctors for Mental Wellness</h2>
+                <p class="subheading">Meet our experienced specialists who promote emotional well-being, resilience, and
+                    a balanced state of mind.</p>
+            </div>
+            <div class="doctors-list">
+                <!-- Doctor 1 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Bilal-Haider.jpg" alt="Dr. Bilal-Haider">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Bilal-Haider</h3>
+                        <p class="specialization">Stress & Emotional Wellness Coach</p>
+                        <p class="experience">15+ years of experience</p>
+                        <p class="description">Dr. Bilal helps individuals enhance emotional resilience through
+                            mindfulness, relaxation techniques, and lifestyle strategies.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-05.html" target="_blank" class="contact-btn">Contact Dr. Bilal</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Nadia-Rehman.jpg" alt="Dr. Nadia-Rehman">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Nadia-Rehman</h3>
+                        <p class="specialization">Mental Wellness Therapist</p>
+                        <p class="experience">10+ years of experience</p>
+                        <p class="description">Dr. Nadia provides therapy for individuals aiming to achieve emotional
+                            balance, reduce anxiety, and improve daily well-being.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-08.html" target="_blank" class="contact-btn">Contact Dr. Nadia</a>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="doctor-image">
+                        <img src="Images/DOCTORS/Hassan-Ali.jpg" alt="Dr. Hassan-Ali">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Hassan-Ali</h3>
+                        <p class="specialization">Holistic Mental Wellness Expert</p>
+                        <p class="experience">12+ years of experience</p>
+                        <p class="description">Dr. Hassan uses evidence-based techniques, including CBT and mindfulness,
+                            to help individuals cultivate a healthier mental state.</p>
+                        <a href="OtherPages/ABOUT-DOCTORS/doc-16.html" target="_blank" class="contact-btn">Contact Dr. Hassan</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- CTA buttons -->
+        <div class="mt-5 CTA" data-aos="fade-up" data-aos-delay="400">
+            <p class="cta-p">Schedule your appointment today and start your journey to wellness! 💙</p>
+            <button type="button"><a href="appoinment.html" target="_blank">Book your Appoinment</a></button>
+        </div>
+    </section>
+
+    <!------------------------Footer Section ------------------------>
+    <footer>
+        <div class="footer-container">
+            <div class="foot">
+                <div class="footer-logo">
+                    <img src="Images/Zara-Logo.png" alt="footer logo">
+                    <p>We provide professional therapy services to help you achieve mental well-being.</p>
+                    <p><strong>Our Approach:</strong> Holistic & Evidence-Based Therapy</p>
+
+                </div>
+                <div class="useful-links">
+                    <h2>Useful-links</h2>
+                    <ul class="ps-0">
+                        <li><a href="OtherPages/blog.html" target="_blank">Blogs</a></li>
+                        <li><a href="OtherPages/Termsandcondition.html" target="_blank">Terms and conditions</a></li>
+                        <li><a href="OtherPages/fees.html" target="_blank">Fees</a></li>
+                        <li><a href="OtherPages/privacypolicy.html" target="_blank">Privacy policy</a></li>
+                        <li><a href="OtherPages/FAQ.html" target="_blank">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-details">
+                    <h2>Contact Us</h2>
+                    <p class="con-p"><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Email:</strong> contact@zaratherapy.com</p>
+                    <p><strong>Location:</strong> 123 Therapy Street, City</p>
+                    <div class="social-link">
+                        <ul class="ps-0">
+                            <li><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://telegram.me/yourusername" target="_blank"><i
+                                        class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="connected">
+                    <h2>Stay connected</h2>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <div class="foot-input">
+                        <input type="email" class="f-email" placeholder="Enter your email here">
+                        <input type="submit" class="f-submit">
+                    </div>
+                    <div class="f-btn">
+                        <button type="button" class="foot-btn1"><a href="contact.html" target="_blank">Contact
+                                Us</a></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-botm">
+                <p>&copy; 2025 <strong> Zara Therapy Clinic.</strong> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-----------------------External JavaScript link-------------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS animation JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-----------------------Internal JavaScript link-------------------->
+    <script src="JS/About.js"></script>
+</body>
+
+</html>

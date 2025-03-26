@@ -1,0 +1,1491 @@
+@media (max-width: 1500px){
+    .hov-hide02
+    {
+        display: none;
+    }
+}
+
+
+
+/* Media Query for 1240px */
+@media (max-width: 1240px) {
+    /* .nav-linkss li a {
+        font-size: 17px;
+    } */
+
+    /* Media query for navbar */
+    .nav-linkss {
+        width: 75%;
+        justify-content: space-between;
+    }
+
+    .hov-hide02 {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* .nav-linkss li a {
+        font-size: 20px;
+    } */
+    .foot {
+        padding: 60px 50px;
+    }
+
+    /* Media query for Terms and condition page */
+    .t-s {
+        top: 160px;
+    }
+
+    .terms-intro {
+        width: 70%;
+    }
+
+    .terms-intro h1 {
+        font-size: 30px;
+    }
+
+    .terms-intro p {
+        font-size: 20px;
+    }
+
+    .accordion-button {
+        font-size: 20px;
+    }
+
+    .accordion-body {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 35px;
+    }
+
+    /* Media  */
+    .fees {
+        top: 160px;
+    }
+
+    .f-head h1 {
+        font-size: 30px;
+    }
+
+    .f-head h2 {
+        font-size: 26px;
+    }
+
+    .table {
+        font-size: 20px;
+    }
+
+    .table th,
+    .table td {
+        padding: 15px;
+    }
+
+    .accordion-button {
+        font-size: 20px;
+    }
+
+    .accordion-body {
+        font-size: 18px;
+    }
+
+    /* Media query for Privacy page */
+    .p-policy {
+        top: 160px;
+    }
+
+    .policy-head,
+    .security-head {
+        width: 70%;
+    }
+
+    .policy-head h1,
+    .security-head h1 {
+        font-size: 30px;
+    }
+
+    .policy-head p,
+    .security-head p {
+        font-size: 20px;
+    }
+
+    .accordion-button {
+        font-size: 20px;
+    }
+
+    .accordion-body {
+        font-size: 18px;
+    }
+
+    /* Media query for FAQ page*/
+    .FAQ {
+        top: 160px;
+    }
+
+    .faq-head h1 {
+        font-size: 30px;
+    }
+
+    .faq-head p {
+        font-size: 20px;
+    }
+
+    .accordion-button {
+        font-size: 20px;
+    }
+
+    .accordion-body {
+        font-size: 18px;
+    }
+
+    /* Media query for Blog page */
+    .blog-container {
+        gap: 30px;
+    }
+
+    .b-img img {
+        width: 350px;
+    }
+
+    /* SERVICE PAGE START */
+    /* Media query for service highlight */
+    .service-highlight {
+        height: 50vh;
+    }
+
+    .overlay1 h1 {
+        font-size: 2.8rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 12px 26px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .footer-logo,
+    .useful-links,
+    .contact-details,
+    .connected {
+        width: 50%;
+        /* ✅ 2 columns layout */
+        padding-right: 20px;
+    }
+
+    .foot {
+        justify-content: space-between;
+        padding: 40px 30px;
+    }
+
+    /* Media query for Blog page */
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .b-img img {
+        width: 80%;
+    }
+
+    .b-detail h1 {
+        margin-right: 0;
+    }
+}
+
+/* Media Query for 1085px */
+@media (max-width: 1085px) {
+    /* Media query for navbar */
+
+    .nav-linkss {
+        width: 75%;
+        justify-content: space-between;
+    }
+
+    .nav-linkss li a {
+        /* font-size: 14px; */
+        font-size: 1.5vw;
+    }
+
+    .hov-hide02 {
+        display: none;
+    }
+}
+
+/* Media Query for 970px */
+@media (max-width: 970px) {
+
+    .f-submit, .foot-btn1 {
+        margin: 8px auto;
+    }
+    /* Media query for header */
+    .headers {
+        padding: 0 20px;
+    }
+
+    .head-logo {
+        width: 50%;
+    }
+
+    .head-search {
+        width: 40%;
+    }
+
+    /* Media query for navbar */
+
+    .nav-linkss li a {
+        /* font-size: 14px; */
+        font-size: 17px;
+    }
+
+    .hov-hide01 {
+        display: none;
+    }
+
+    .hov-hide02 {
+        display: inline;
+    }
+
+    .apt-btn button {
+        height: 35px;
+        width: 130px;
+        font-size: 15px;
+    }
+
+    /* Media query foe carousal */
+    .hero {
+        top: 120px;
+        width: 90%;
+    }
+
+    .carousel-item {
+        height: 400px;
+    }
+
+
+    .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .visit-page .c-btn,
+    .c-btn1 {
+        width: 150px;
+        /* Reduce button width */
+        height: 45px;
+        /* Reduce button height */
+    }
+
+    .visit-page .c-btn a,
+    .c-btn1 a {
+        font-size: 18px;
+        /* Reduce button text size */
+    }
+
+    /* Media query for Introduction */
+    .intro {
+        top: 150px;
+        /* Adjust top spacing */
+    }
+
+    .clinic-intro {
+        height: auto;
+        /* Height flexible */
+        padding: 30px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .intro-detail {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    /* Media query for Gallery */
+    .gallery {
+        top: 150px;
+    }
+
+    .gallery-item {
+        border-radius: 8px;
+    }
+
+    .gallery-overlay p {
+        font-size: 1.3rem;
+    }
+
+    .gallery-overlay {
+        padding: 12px;
+        width: 95%;
+    }
+
+    /* Media query for Clinic view */
+    .c-view {
+        top: 150px;
+    }
+
+    .view-head h1 {
+        font-size: 28px;
+    }
+
+    .view-head p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .clinic-carousel img {
+        height: 250px;
+    }
+
+    /* Media query for Key services */
+    .key-services {
+        top: 150px;
+        padding: 40px 15px;
+    }
+
+    .service-container {
+        width: 90%;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+    }
+
+    .service-card h5 {
+        font-size: 18px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+
+    /* Media query for Client testimonial */
+    .testimonial {
+        top: 150px;
+        padding: 30px 15px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .cta-p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .CTA button {
+        height: 38px;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    /* Media query for Contact section */
+    .c-sec {
+        top: 150px;
+        padding: 30px 20px;
+    }
+
+    .social-link ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-link ul li a {
+        font-size: 18px;
+    }
+
+    /* Media query for Footer */
+    .footer-logo,
+    .useful-links,
+    .contact-details,
+    .connected {
+        width: 100%;
+        /* ✅ Ek column layout */
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .social-link ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Media queries for Terms and condition page */
+    .t-s {
+        top: 140px;
+    }
+
+    .terms-intro {
+        width: 80%;
+    }
+
+    .terms-intro h1 {
+        font-size: 28px;
+    }
+
+    .terms-intro p {
+        font-size: 18px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+    }
+
+    .accordion-body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    /* Media query fo Privacy page */
+    .p-policy {
+        top: 140px;
+    }
+
+    .policy-head,
+    .security-head {
+        width: 80%;
+    }
+
+    .policy-head h1,
+    .security-head h1 {
+        font-size: 28px;
+    }
+
+    .policy-head p,
+    .security-head p {
+        font-size: 18px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+    }
+
+    .accordion-body {
+        font-size: 16px;
+    }
+
+    /* Media query for FAQ page */
+    .FAQ {
+        top: 140px;
+    }
+
+    .faq-head h1 {
+        font-size: 28px;
+    }
+
+    .faq-head p {
+        font-size: 18px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+    }
+
+    .accordion-body {
+        font-size: 16px;
+    }
+}
+
+/* Media Query for 880px */
+
+@media (max-width: 880px) {
+    /* Media query for navbar */
+    .apt-btn {
+        width: 120px;
+    }
+    .apt-btn button {
+        width:100%;
+    }
+   
+
+    /* Media query for Blog page */
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .b-img img {
+        width: 90%;
+    }
+
+    .b-detail h1 {
+        font-size: 22px;
+        margin-right: 0;
+    }
+
+    .b-detail p {
+        padding: 0;
+    }
+
+    .blog-btn {
+        width: 120px;
+    }
+
+    .author {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Media Query for 768px */
+@media (max-width: 768px) {
+    /* Media query for header */
+    .nav-linkss li {
+        /* list-style: none;
+        position: relative; */
+        padding: 15px 20px;
+    }
+
+    .headers {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .head-logo {
+        width: 40%;
+    }
+
+    .head-search {
+        width: 60%;
+    }
+
+    /* Media query for navbar */
+
+    .nav-linkss {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #e0dfdf;
+        padding: 10px 0;
+    }
+
+    .nav-linkss.active {
+        display: flex;
+    }
+
+    .nav-bar {
+        width: 100%;
+        height: auto;
+        padding: 5px 0px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        margin-right: 30px;
+    }
+
+    #brand_name {
+        display: none;
+    }
+
+    .hov-hide01 {
+        display: block;
+    }
+
+    .hov-hide02 {
+        display: none;
+    }
+    .apt-btn button {
+        width: 120px;
+    }
+    .apt-btn {
+        margin: 0 480px 0 40px;
+    }
+
+    /* Media query for carousal */
+
+    .hero {
+        top: 100px;
+        width: 95%;
+    }
+
+    .carousel-item {
+        height: 350px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        display: none;
+    }
+
+    .visit-page .c-btn,
+    .c-btn1 {
+        width: 140px;
+        height: 40px;
+    }
+
+    /* Media query for Introduction */
+    .intro {
+        top: 120px;
+        padding: 20px;
+    }
+
+    .clinic-intro {
+        width: 90%;
+        /* Reduce width for better fit */
+        height: auto;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 28px;
+        /* Reduce heading size */
+        margin-bottom: 30px;
+    }
+
+    .intro-detail {
+        font-size: 15px;
+        line-height: 1.6rem;
+    }
+
+    /* Media query for Gallery */
+    .gallery {
+        top: 120px;
+        /* Adjust top spacing */
+        padding: 0 15px;
+    }
+
+    .row.g-4 {
+        gap: 15px;
+        /* Reduce gap between items */
+    }
+
+    .gallery-item {
+        border-radius: 6px;
+    }
+
+    .gallery-item img {
+        height: auto;
+    }
+
+    .gallery-overlay p {
+        font-size: 1.1rem;
+    }
+
+    .gallery-overlay {
+        padding: 10px;
+        width: 95%;
+    }
+
+    /* Media query ffor Clinic view */
+    .c-view {
+        top: 120px;
+        padding: 0 10px;
+    }
+
+    .view-head h1 {
+        font-size: 26px;
+    }
+
+    .clinic-carousel img {
+        height: 220px;
+    }
+
+    .clinic-carousel {
+        padding: 40px;
+    }
+
+    .key-services {
+        top: 120px;
+        padding: 30px 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-4 {
+        width: 100%;
+    }
+
+    .service-card {
+        padding: 10px;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+
+    .service-card h5 {
+        font-size: 16px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+
+    .service-card .service-btn {
+        height: 35px;
+        width: 130px;
+    }
+
+    /* Media query for Client Testimonial */
+    .testimonial {
+        top: 120px;
+        padding: 20px 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        /* Testimonials in single column */
+    }
+
+    .col-md-6 {
+        width: 100%;
+        /* Full width testimonials */
+    }
+
+    .testimonial-card {
+        padding: 12px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+    }
+
+    .testimonial-author {
+        font-size: 14px;
+    }
+
+    .cta-p {
+        font-size: 16px;
+    }
+
+    .CTA button {
+        height: 35px;
+        width: 180px;
+        font-size: 14px;
+    }
+
+    /* Media query for Contact section */
+    .c-sec {
+        top: 120px;
+        padding: 25px 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    .social-link ul {
+        gap: 10px;
+    }
+
+    .social-link ul li a {
+        font-size: 16px;
+    }
+
+    /* Media query for Footer */
+    .footer-container {
+        text-align: center;
+    }
+
+    .foot {
+        padding: 20px;
+    }
+
+    .social-link ul {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .f-email {
+        width: 100%;
+        /* ✅ Full width input */
+    }
+
+    .f-submit {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .foot-btn1 {
+        width: 100%;
+    }
+
+    /* Media queries for Terms and condition page */
+    .t-s {
+        top: 120px;
+        padding: 15px;
+    }
+
+    .terms-intro {
+        width: 90%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .terms-intro h1 {
+        font-size: 26px;
+    }
+
+    .terms-intro p {
+        font-size: 17px;
+        padding: 15px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .accordion-body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    /* Media query for Fees page */
+    .fees {
+        top: 120px;
+        padding: 15px;
+    }
+
+    .f-head {
+        padding: 15px;
+    }
+
+    .f-head h1 {
+        font-size: 26px;
+    }
+
+    .f-head h2 {
+        font-size: 22px;
+    }
+
+    .table {
+        font-size: 16px;
+    }
+
+    .table th,
+    .table td {
+        padding: 10px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .accordion-body {
+        font-size: 16px;
+    }
+
+    /* Media query for privacy page */
+    .p-policy {
+        top: 120px;
+        padding: 15px;
+    }
+
+    .policy-head,
+    .security-head {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .policy-head h1,
+    .security-head h1 {
+        font-size: 26px;
+    }
+
+    .policy-head p,
+    .security-head p {
+        font-size: 17px;
+        padding: 15px;
+        margin-left: 0;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .accordion-body {
+        font-size: 16px;
+    }
+
+    /* Media query for FAQ page */
+    .FAQ {
+        top: 120px;
+        padding: 15px;
+    }
+
+    .faq-head h1 {
+        font-size: 26px;
+    }
+
+    .faq-head p {
+        font-size: 18px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .accordion-body {
+        font-size: 16px;
+    }
+
+    /* Media query for Blog page */
+    .blog-sec {
+        top: 50px;
+    }
+
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .b-img img {
+        width: 100%;
+    }
+
+    .b-detail h1 {
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    .b-detail p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .blog-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .author {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author img {
+        margin-bottom: 10px;
+    }
+
+    /* SERVICE PAGE START */
+    .overlay1 h1 {
+        font-size: 2rem;
+    }
+
+    .service {
+        height: 250px;
+    }
+    .main-heading {
+        width: 90%;
+        top: 80px;
+    }
+    .main-heading h1 {
+        padding: 30px;
+        font-size: 40px;
+    }
+    .ser-description h2 {
+        font-size: 1.2rem;
+    }
+
+    .main-img {
+        height: 300px;
+    }
+
+    .small-img {
+        height: 300px;
+    }
+
+    .doctor-card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .doctor-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .doctor-info .specialization {
+        font-size: 1rem;
+    }
+
+    .doctor-info .experience {
+        font-size: 0.9rem;
+    }
+
+    .doctor-info .description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .t-s {
+        top: 100px;
+        padding: 10px;
+    }
+
+    .terms-intro {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .terms-intro h1 {
+        font-size: 22px;
+    }
+
+    .terms-intro p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Media query for fees page */
+    .fees {
+        top: 100px;
+        padding: 10px;
+    }
+
+    .f-head {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .f-head h1 {
+        font-size: 22px;
+    }
+
+    .f-head h2 {
+        font-size: 20px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    /* Media query for policy page */
+    .p-policy {
+        top: 100px;
+        padding: 10px;
+    }
+
+    .policy-head,
+    .security-head {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .policy-head h1,
+    .security-head h1 {
+        font-size: 22px;
+        margin-left: 0;
+    }
+
+    .policy-head p,
+    .security-head p {
+        font-size: 16px;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    /* Media for FAQ page */
+    .FAQ {
+        top: 100px;
+        padding: 10px;
+    }
+
+    .faq-head h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .faq-head p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+    .fees {
+        margin-top: 50px;
+    }
+    
+    /* SERVICE PAGE START */
+}
+
+/* Media Query for 480px */
+
+@media (max-width: 480px) {
+    /* Media query for header */
+
+    .header {
+        padding: 10px 5px;
+    }
+
+    .inp-search {
+        width: 75%;
+    }
+
+    .s-icon {
+        width: 25%;
+    }
+
+    /* Media query for navbar */
+    
+    .nav-bar {
+        top: 60px;
+    }
+
+    .menu-toggle {
+        margin-right: 40px;
+    }
+
+    .apt-btn button {
+        width: 120px;
+    }
+
+    /* Media query for carousal */
+
+    .hero {
+        top: 80px;
+        width: 100%;
+    }
+
+    .carousel-item {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+    
+    .visit-page .c-btn,
+    .c-btn1 {
+        width: 120px;
+        height: 35px;
+    }
+
+    /* Media query for Introduction */
+    .intro {
+        top: 100px;
+        /* Reduce top spacing */
+    }
+
+    .clinic-intro {
+        width: 95%;
+        /* Full width for small screens */
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 24px;
+        /* Smaller heading */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .heading::after {
+        width: 80%;
+        /* Adjust underline width */
+    }
+
+    .intro-detail {
+        font-size: 14px;
+        /* Smaller text */
+        line-height: 1.5rem;
+    }
+
+    /* Media query for Gallery */
+    .gallery {
+        top: 100px;
+        /* Reduce top spacing */
+        padding: 0 10px;
+    }
+
+    .g-head h1 {
+        font-size: 28px;
+        /* Smaller heading */
+    }
+
+    .g-head p {
+        font-size: 14px;
+        /* Smaller paragraph */
+    }
+
+    .gallery-item {
+        border-radius: 5px;
+    }
+
+    .gallery-overlay {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .gallery-overlay p {
+        font-size: 1rem;
+        /* Smaller text for better readability */
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.02);
+        /* Less zoom effect on hover */
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.08);
+    }
+
+    /* Media query for Clinic view */
+    .c-view {
+        top: 100px;
+        padding: 0 5px;
+    }
+
+    .view-head h1 {
+        font-size: 24px;
+    }
+
+    .view-head p {
+        font-size: 14px;
+    }
+
+    .clinic-carousel img {
+        height: 180px;
+    }
+
+    /* Media query for Key services */
+    .key-services {
+        top: 100px;
+        padding: 20px 5px;
+    }
+
+    .service-container {
+        width: 100%;
+    }
+
+    .service-card {
+        padding: 8px;
+    }
+
+    .service-icon {
+        font-size: 1.8rem;
+    }
+
+    .service-card h5 {
+        font-size: 14px;
+    }
+
+    .service-card p {
+        font-size: 12px;
+    }
+
+    .service-card .service-btn {
+        height: 30px;
+        width: 120px;
+        font-size: 14px;
+    }
+    
+    /* Media query for Client Testimonial */
+    .testimonial {
+        top: 100px;
+        padding: 15px 5px;
+    }
+    
+    .testimonial-card {
+        padding: 10px;
+    }
+    
+    .testimonial-text {
+        font-size: 12px;
+    }
+
+    .testimonial-author {
+        font-size: 12px;
+    }
+
+    .cta-p {
+        font-size: 14px;
+    }
+
+    .CTA button {
+        height: 32px;
+        width: 160px;
+        font-size: 13px;
+    }
+   
+    /* Media query for Contact section */
+    .c-sec {
+        top: 100px;
+        padding: 20px 10px;
+    }
+
+    h4.heading {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    iframe {
+        height: 180px;
+    }
+
+    .social-link ul {
+        gap: 8px;
+    }
+
+    .social-link ul li a {
+        font-size: 14px;
+    }
+
+    /* SERVICE PAGE START */
+    .overlay1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .service {
+        height: 200px;
+    }
+
+    .ser-description h2 {
+        font-size: 1rem;
+    }
+    .main-heading {
+        width: 95%;
+        top: 60px;
+    }
+    .main-heading h1 {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .main-img {
+        height: 250px;
+    }
+
+    .small-img {
+        height: 250px;
+    }
+
+    .doctor-card {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .doctor-info h3 {
+        font-size: 1rem;
+    }
+
+    .doctor-info .specialization {
+        font-size: 0.9rem;
+    }
+
+    .doctor-info .experience {
+        font-size: 0.8rem;
+    }
+
+    .doctor-info .description {
+        font-size: 0.75rem;
+    }
+
+}

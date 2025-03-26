@@ -1,0 +1,386 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Lora', serif;
+}
+
+:root {
+    --background-color: #e5f8e5;
+    --primary-color: #A8D5BA;
+    --accent-color: #A7C7E7;
+    --heading-color: #2C6E49;
+    --text-color: #4A4A4A;
+    --button-color: #6CA6C1;
+    --button-hover: #4F91B8;
+    --border-color: #DCEAE3;
+    --text-white: #ffff;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* HEADLINE */
+.engaging-headline {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 120px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.engaging-headline img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.engaging-headline::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.headline {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* --------------RESPONSIVE--------------- */
+@media screen and (max-width: 1024px) {
+    .headline {
+        font-size: 32px;
+    }
+
+    .engaging-headline {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headline {
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .engaging-headline {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headline {
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .engaging-headline {
+        height: 250px;
+    }
+}
+
+/* PRODUCTS */
+.main-headings h1 {
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 3px solid #6CA6C1;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    padding: 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-size: 60px;
+    position: relative;
+    /* white-space: nowrap; */
+    top: 140px;
+}
+
+.products {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: var(--background-color);
+    padding: 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    position: relative;
+    top: 170px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #ffffff;
+    /* border: 3px solid #6CA6C1; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    border: 3px solid #6CA6C1;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-title a {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    text-decoration: none;
+}
+
+.product-description {
+    font-size: 18px;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+/* --------------RESPONSIVE--------------- */
+/* ---------- Extra Small Devices (phones, less than 576px) ---------- */
+@media (max-width: 575px) {
+    .main-headings h1 {
+        max-width: 90%;
+        min-width: auto;
+        font-size: 20px;
+        padding: 30px;
+        margin: 30px;
+    }
+
+    .products {
+        max-width: 90%;
+        min-width: auto;
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 250px;
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .product-description {
+        font-size: 16px;
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+
+}
+
+/* ---------- Small Devices (phones & small tablets, 576px - 767px) ---------- */
+@media (min-width: 576px) and (max-width: 767px) {
+    .main-headings h1 {
+        max-width: 90%;
+        min-width: auto;
+        font-size: 26px;
+        padding: 40px;
+        margin: 40px auto;
+    }
+
+    .products {
+        max-width: 90%;
+        min-width: auto;
+        padding: 40px;
+        margin: 40px auto;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 280px;
+    }
+
+    .product-title {
+        font-size: 22px;
+    }
+
+    .product-description {
+        font-size: 17px;
+    }
+
+    .product-price {
+        font-size: 19px;
+    }
+
+}
+
+/* ---------- Medium Devices (Tablets & Small Laptops, 768px - 991px) ---------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-headings h1 {
+        max-width: 90%;
+        min-width: auto;
+        font-size: 48px;
+        padding: 50px;
+        margin: 50px auto;
+    }
+
+    .products {
+        max-width: 90%;
+        min-width: auto;
+        padding: 50px;
+        margin: 50px auto;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card img {
+        height: 300px;
+    }
+
+    .product-title {
+        font-size: 22px;
+    }
+
+    .product-description {
+        font-size: 18px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+}
+
+/* ---------- Large Devices (Laptops & Desktops, 992px - 1199px) ---------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-headings h1 {
+        max-width: 90%;
+        min-width: auto;
+        font-size: 40px;
+        padding: 50px;
+        margin: 60px auto;
+    }
+
+    .products {
+        max-width: 90%;
+        min-width: auto;
+        padding: 50px;
+        margin: 60px auto;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card img {
+        height: 320px;
+    }
+
+    .product-title {
+        font-size: 24px;
+    }
+
+    .product-description {
+        font-size: 18px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+}
+
+/* ---------- Extra Large Devices (Desktops & Wide Screens, 1200px and up) ---------- */
+@media (min-width: 1200px) {
+    .main-headings h1 {
+        max-width: 1200px;
+        min-width: 900px;
+        font-size: 50px;
+        padding: 50px;
+        margin: 60px auto;
+    }
+
+    .products {
+        max-width: 1200px;
+        min-width: 900px;
+        padding: 50px;
+        margin: 60px auto;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card img {
+        height: 350px;
+    }
+
+    .product-title {
+        font-size: 26px;
+    }
+
+    .product-description {
+        font-size: 18px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet">
+    <!----------------------Font awesome icons link------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+       <!-- AOS LIBRARY CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!------------------- Bootstrap CSS ------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="stylesheet" href="Css/discount.css">
+    <link rel="icon" href="Images/Zara-Logo.png">
+    <title>Zara Therapy Clinic</title>
+</head>
+
+<body>
+    <!-- back to top button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+    <!--preloader -->
+    <div id="preloader">
+         <div class="loader"></div>
+     </div>
+    <!----------------------Header start------------------------>
+    <header>
+        <div class="headers">
+            <div class="head-logo">
+                <a href="index.html" target="_blank"><img src="Images/Zara-Logo.png" alt="ZTC-logo"></a>
+                <span id="brand_name"></span>
+            </div>
+            <div class="head-search">
+                <input class="inp-search" type="text" placeholder="Search">
+                <div class="s-icon">
+                    <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----------------------Nav-bar start------------------------>
+    <nav>
+        <div class="nav-bar">
+            <div class="navlink">
+                <ul class="nav-linkss ps-0 m-0">
+                    <li><a class="hov" href="index.html" target="_blank">Home</a></li>
+                    <li><a class="hov" href="about.html" target="_blank">About</a></li>
+                      <!---------Product dropdown-------->
+                      <li class="dropdown1">
+                        <a class="hov" href="products.html" target="_blank">Products</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="products.html#journals" target="_blank">Journals</a></li>
+                            <li><a href="products.html#relaxation" target="_blank">Relaxation</a></li>
+                            <li><a href="products.html#resources" target="_blank">Resources</a></li>
+                        </ul>
+                    </li>
+                    <!---------Services dropdown-------->
+                    <li class="dropdown1">
+                        <a class="hov" href="service.html" target="_blank">Services</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="service.html#family-counseling" target="_blank">Family</a></li>
+                            <li><a href="service.html#couple-counseling" target="_blank">Couple</a></li>
+                            <li><a href="service.html#teen-counseling" target="_blank">Youth</a></li>
+                        </ul>
+                    </li>
+                    <li class="hov-hide01"><a class="hov active" href="#">Offers
+                            and Discounts</a></li>
+                    <li class="hov-hide01"><a class="hov" href="contact.html" target="_blank">Contact Us</a></li>
+                    <li class="hov-hide02"><a href="discountandoffers.html" target="_blank">Best offer</a></li>
+                    <li class="hov-hide02"><a href="contact.html" target="_blank">Reach Out</a></li>
+                </ul>
+                <!---------Appoinment button-------->
+                <div class="apt-btn">
+                    <button><a href="appoinment.html" target="_blank">Appoinment</a></button>
+                </div>
+            </div>
+            <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+    <!----------------------Nav bar complete------------------------>
+    <div class="offer-banner" data-aos="fade-up">
+        <h1>Heal & Save! Get Exclusive Discounts on Therapy Sessions</h1>
+        <p>Book your appointment today and save big!</p>
+        <p class="discount">Get <span class="d03">30%</span> Off on Your First Session</p>
+        <button class="btn" onclick="bookAppointment()">Book Now</button>
+    </div>
+    <br>
+
+    <div class="intro-box" data-aos="fade-up">
+        <p> "Your mental health is important, and we’re here to make it more accessible! Explore our special offers on
+            therapy sessions, wellness packages, and self-care products. Take advantage of these deals before they
+            expire!"
+        </p>
+    </div>
+    <div class="carousel-container container-xxl" data-aos="fade-up">
+        <h1 class="heading">Our Therapy Products</h1>
+        <div class="carousel">
+
+            <div class="product" data-aos="fade-up" data-aos-delay="100">
+                <img src="Images/istockphoto-698123398-612x612.jpg" alt="Product 1">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Aromatherapy Oil</h3>
+                <p>Relax and refresh with our essentials oils.</p>
+                <p class="price">
+                    <span class="real-price">₹2000</span>
+                    <span class="discount-price">₹1600</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+
+            </div>
+
+            <div class="product" data-aos="fade-up" data-aos-delay="200">
+                <img src="Images/premium_photo-1701094772103-c60b22a69ccc.avif" alt="Product 2">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Meditation Kit</h3>
+                <p>Enhance your mindfulness practice.</p>
+                <p class="price">
+                    <span class="real-price">₹1500</span>
+                    <span class="discount-price">₹1275</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="300">
+                <img src="Images/istockphoto-1755917055-1024x1024.jpg" alt="Product 3">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Self-care journal</h3>
+                <p>Track your mental wellness journey.</p>
+                <p class="price">
+                    <span class="real-price">₹3000</span>
+                    <span class="discount-price">₹2100</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-delay="400">
+                <img src="Images/istockphoto-1210120265-1024x1024.jpg" alt="Product 4">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Yoga mat</h3>
+                <p>Find your balance and comfort with our premium yoga mat.</p>
+                <p class="price">
+                    <span class="real-price">₹1800</span>
+                    <span class="discount-price">₹1100</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+
+            </div>
+
+            <div class="product" data-aos="fade-up" data-aos-delay="500">
+                <img src="Images/istockphoto-1210690986-1024x1024 (1).jpg" alt="Product 5">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Heating pad</h3>
+                <p>Relax and unwind with soothing heat</p>
+                <p class="price">
+                    <span class="real-price">₹1500</span>
+                    <span class="discount-price">₹1200</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-container2 container-xxl" data-aos="fade-up">
+        <div class="carousel">
+
+            <div class="product" data-aos="fade-up" data-aos-delay="100">
+                <img src="Images/istockphoto-1249274428-1024x1024.jpg" alt="Product 6">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Foam roller</h3>
+                <p>Perfect for muscle recovery.</p>
+                <p class="price">
+                    <span class="real-price">₹2500</span>
+                    <span class="discount-price">₹1900</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+
+
+            <div class="product" data-aos="fade-up" data-aos-delay="200">
+                <img src="Images/photo-1728551040634-db461e235b1f.avif" alt="Product 7">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Aromatherapy Candle</h3>
+                <p>Light up your soul with soothing scents and serene moments.</p>
+                <p class="price">
+                    <span class="real-price">₹2900</span>
+                    <span class="discount-price">₹2500</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+
+            <div class="product" data-aos="fade-up" data-aos-delay="300">
+                <img src="Images/istockphoto-2150430113-1024x1024.jpg" alt="Product 8">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Peppermint Oil</h3>
+                <p>Refreshing,soothing,and invigorating peppermint oil for a burst of natral wellness!</p>
+                <p class="price">
+                    <span class="real-price">₹1200</span>
+                    <span class="discount-price">₹900</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+
+
+            <div class="product" data-aos="fade-up" data-aos-delay="400">
+                <img src="Images/istockphoto-1369764075-1024x1024.jpg" alt="Product 9">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Aromatherapy massage cream</h3>
+                <p>Relaxation,stress relief and sleep aid.</p>
+                <p class="price">
+                    <span class="real-price">₹2400</span>
+                    <span class="discount-price">₹1300</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+
+
+
+            <div class="product" data-aos="fade-up" data-aos-delay="500">
+                <img src="Images/istockphoto-1750637007-1024x1024.jpg" alt="Product 10">
+                <div class="discount-tag">30% OFF</div>
+                <h3>Massage Roller Kit</h3>
+                <p>Massaging tool for a burst of relaxation!</p>
+                <p class="price">
+                    <span class="real-price">₹3000</span>
+                    <span class="discount-price">₹2600</span>
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="containered" data-aos="fade-up">
+        <div class="o-head">
+        <h2 class="heading">Current Offers & Discounts</h2>
+    </div>
+        <div class="offer" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <h3>First-time Client Discount</h3>
+                <p>Get 15% off on your first counselling session. Book your first appointment today!</p>
+            </div>
+            <div>
+                <p class="price">Save 15%</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+
+        <div class="offer" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <h3>Referral Program</h3>
+                <p>Refer a friend and both of you will get 10% off on your next session.</p>
+            </div>
+            <div>
+                <p class="price">Save 10%</p>
+                <button>Refer Now</button>
+            </div>
+        </div>
+
+        <div class="offer" data-aos="fade-up" data-aos-delay="300">
+            <div>
+                <h3>5-Session Package Deal</h3>
+                <p>Book 5 sessions and get the 5th session free!</p>
+            </div>
+            <div>
+                <p class="price">Save on 5 sessions</p>
+                <button>Book Package</button>
+            </div>
+        </div>
+        <div class="offer" data-aos="fade-up" data-aos-delay="400">
+            <div>
+                <h3>Online Booking Discount</h3>
+                <p>Get 10% off when you book your session online.</p>
+            </div>
+            <div>
+                <p class="price">Save 10%</p>
+                <button>Book Online</button>
+            </div>
+
+        </div>
+
+        <div class="offer" data-aos="fade-up" data-aos-delay="500">
+            <div>
+                <h3>Couples & Marriage Counselling Discount</h3>
+                <p>Get 15% off when you book your session.</p>
+            </div>
+            <div>
+                <p class="price">Save 15%</p>
+                <button>Book Online</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-xl my-5 faq-container " data-aos="fade-up">
+        <div class="d-flex justify-content-center">
+            <h2 class="heading faq-head">Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq1">1. Do you offer first-time customer discounts?</button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Yes! First-time customers get a 15% discount on their first therapy session.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq2">2. Are there any seasonal offers available?</button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Yes, we offer special discounts during holidays and festive seasons. Keep an eye on our website for updates.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq3">3. Do you have any referral discounts?</button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Yes, refer a friend and both of you will receive a 10% discount on your next visit.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq4">4. Can I use multiple discounts at the same time?</button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">No, only one discount offer can be applied per visit.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq5">5. How can I stay updated on new offers?</button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">You can subscribe to our newsletter or follow us on social media for the latest updates on discounts and promotions.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Call-to-Action Section -->
+ <div class="cta-section" data-aos="fade-up">
+    <h2 class="heading">Have Questions? Get in Touch!</h2>
+    <p>We’re here to help 💙. Reach out to us for any queries regarding our policies.</p>
+    <a href="contact.html" target="_blank"><button>Contact Us</button></a>
+    <a href="appoinment.html" target="_blank"><button>Book An Appoinment</button></a>
+</div>
+  <!----------------------Footer start------------------------>
+  <footer>
+    <div class="footer-container">
+        <div class="foot">
+            <div class="footer-logo">
+                <img src="Images/Zara-Logo.png" alt="footer logo">
+                <p>We provide professional therapy services to help you achieve mental well-being.</p>
+                <p><strong>Our Approach:</strong> Holistic & Evidence-Based Therapy</p>
+
+            </div>
+            <div class="useful-links">
+                <h2>Useful-links</h2>
+                <ul class="ps-0">
+                    <li><a href="OtherPages/blog.html" target="_blank">Blogs</a></li>
+                    <li><a href="OtherPages/Termsandcondition.html" target="_blank">Terms and conditions</a></li>
+                    <li><a href="OtherPages/fees.html" target="_blank">Fees</a></li>
+                    <li><a href="OtherPages/privacypolicy.html" target="_blank">Privacy policy</a></li>
+                    <li><a href="OtherPages/FAQ.html" target="_blank">FAQ's</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-details">
+                <h2>Contact Us</h2>
+                <p class="con-p"><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> contact@zaratherapy.com</p>
+                <p><strong>Location:</strong> 123 Therapy Street, City</p>
+                <div class="social-link">
+                    <ul class="ps-0">
+                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://telegram.me/yourusername" target="_blank"><i
+                                    class="fa-brands fa-telegram"></i></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="connected">
+                <h2>Stay connected</h2>
+                <p>Subscribe to our newsletter for updates</p>
+                <div class="foot-input">
+                    <input type="email" class="f-email" placeholder="Enter your email here">
+                    <input type="submit" class="f-submit">
+                </div>
+                <div class="f-btn">
+                    <button type="button" class="foot-btn1"><a href="contact.html" target="_blank">Contact Us</a></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-botm">
+            <p>&copy; 2025 <strong> Zara Therapy Clinic.</strong> All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!----------------------Footer complete------------------------>
+
+
+
+    <!-----------------------External JavaScript link-------------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- AOS LIBRARY JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="JS/discount.js"></script>
+</body>
+
+</html>

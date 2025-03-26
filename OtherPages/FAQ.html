@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------Google fonts link------------------------>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!----------------------Font awesome icons link------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!------------------- Bootstrap CSS ------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!----------------------Style sheet------------------------>
+    <link rel="stylesheet" href="ABOUT-DOCTORS/Css/style.css">
+    <link rel="stylesheet" href="ABOUT-DOCTORS/Css/responsive.css">
+    <!----------------------Website's Icon------------------------>
+    <link rel="icon" href="Images/Zara-Logo.png">
+    <!----------------------Websites's Title------------------------>
+    <title>Zara Therapy Clinic</title>
+
+</head>
+
+<body>
+
+    <!-- back to top button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+    <!--preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!----------------------Header start------------------------>
+    <header>
+        <div class="headers">
+            <div class="head-logo">
+                <a href="index.html" target="_blank"><img src="Images/Zara-Logo.png" alt="ZTC-logo"></a>
+                <span id="brand_name"></span>
+            </div>
+            <div class="head-search">
+                <input class="inp-search" type="text" placeholder="Search">
+                <div class="s-icon">
+                    <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----------------------Nav-bar start------------------------>
+    <nav>
+        <div class="nav-bar">
+            <div class="navlink">
+                <ul class="nav-linkss ps-0 m-0">
+                    <li><a class="hov" href="index.html" target="_blank">Home</a></li>
+                    <li><a class="hov" href="about.html" target="_blank">About</a></li>
+                     <!---------Product dropdown-------->
+                     <li class="dropdown1">
+                        <a class="hov" href="products.html" target="_blank">Products</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="products.html#journals" target="_blank">Journals</a></li>
+                            <li><a href="products.html#relaxation" target="_blank">Relaxation</a></li>
+                            <li><a href="products.html#resources" target="_blank">Resources</a></li>
+                        </ul>
+                    </li>
+                    <!---------Services dropdown-------->
+                    <li class="dropdown1">
+                        <a class="hov" href="service.html" target="_blank">Services</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="service.html#family-counseling" target="_blank">Family</a></li>
+                            <li><a href="service.html#couple-counseling" target="_blank">Couple</a></li>
+                            <li><a href="service.html#teen-counseling" target="_blank">Youth</a></li>
+                        </ul>
+                    </li>
+                    <li class="hov-hide01"><a class="hov" href="discountandoffers.html" target="_blank">Offers and
+                            Discounts</a></li>
+                    <li class="hov-hide01"><a class="hov" href="contact.html" target="_blank">Contact Us</a></li>
+                    <li class="hov-hide02"><a href="discountandoffers.html" target="_blank">Best offer</a></li>
+                    <li class="hov-hide02"><a href="contact.html" target="_blank">Reach Out</a></li>
+                </ul>
+                <!---------Appoinment button-------->
+                <div class="apt-btn">
+                    <button><a href="appoinment.html" target="_blank">Appoinment</a></button>
+                </div>
+            </div>
+            <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+    <!----------------------Nav bar complete------------------------>
+
+    <!----------------------FAQ's section start------------------------>
+    
+    <section class="FAQ">
+        <div class="container faq-head" data-aos="fade-up">
+            <h1 class="heading">Frequently Asked Questions (FAQs)</h1>
+            <p>Here are answers to some of the common questions about our services,Payment & Insurance</p>
+        </div>
+        <div class="accordion container" id="faqsAccordion" data-aos="fade-up" data-aos-delay="100">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        1. What types of therapy sessions does Zara Therapy Clinic offer?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        We provide individual therapy, couples therapy, family therapy, and child therapy. Our services
+                        include cognitive-behavioral therapy (CBT), stress management, anxiety and depression therapy,
+                        and more.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                       2. Do I need to book an appointment, or can I walk in?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        We recommend booking an appointment in advance to ensure availability, but we do accommodate
+                        walk-in clients when possible.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        3. How do I book an appointment?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        You can book an appointment through our website or by calling us at +65 XXXX XXXX.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        4. What are the clinic's operating hours?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        Our clinic is open from Monday to Saturday, 9:00 AM to 6:00 PM.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        5. Do you offer online therapy sessions?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        Yes, we provide both in-office and online therapy sessions for your convenience.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                        6. What is the cost of a therapy session?
+                    </button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        Our therapy session fees vary based on the type of service. Please visit our <a
+                        href="fees.html">Fees Page</a> for details.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                        7. How long does a therapy session last?
+                    </button>
+                </h2>
+                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        A typical therapy session lasts between 45 to 60 minutes, depending on the type of session.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                        8. How does the therapy process work?
+                    </button>
+                </h2>
+                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        The process starts with an initial assessment, followed by goal-setting and regular therapy
+                        sessions based on your needs. Progress is monitored, and sessions are adjusted accordingly.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                        9. Are installment payment options available?
+                    </button>
+                </h2>
+                <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        Yes, we offer flexible payment options, including installment plans for long-term therapy
+                        programs
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+                        10. What happens if I miss a session? Will I be charged?
+                    </button>
+                </h2>
+                <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        We have a cancellation policy. If you inform us in advance, rescheduling is possible. However,
+                        last-minute cancellations may incur a charge.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
+                        11. Is there parking available at the clinic?
+                    </button>
+                </h2>
+                <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+                    <div class="accordion-body">
+                        Yes, we have dedicated parking space for our clients. Street parking may also be available
+                        nearby.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------FAQ's section end------------------------>
+
+    <!----------------------Footer start------------------------>
+    <footer>
+        <div class="footer-container">
+            <div class="foot">
+                <div class="footer-logo">
+                    <img src="Images/Zara-Logo.png" alt="footer logo">
+                    <p>We provide professional therapy services to help you achieve mental well-being.</p>
+                    <p><strong>Our Approach:</strong> Holistic & Evidence-Based Therapy</p>
+
+                </div>
+                <div class="useful-links">
+                    <h2>Useful-links</h2>
+                    <ul class="ps-0">
+                        <li><a href="OtherPages/blog.html" target="_blank">Blogs</a></li>
+                        <li><a href="OtherPages/Termsandcondition.html" target="_blank">Terms and conditions</a></li>
+                        <li><a href="OtherPages/fees.html" target="_blank">Fees</a></li>
+                        <li><a href="OtherPages/privacypolicy.html" target="_blank">Privacy policy</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-details">
+                    <h2>Contact Us</h2>
+                    <p class="con-p"><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Email:</strong> contact@zaratherapy.com</p>
+                    <p><strong>Location:</strong> 123 Therapy Street, City</p>
+                    <div class="social-link">
+                        <ul class="ps-0">
+                            <li><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://telegram.me/yourusername" target="_blank"><i
+                                        class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="connected">
+                    <h2>Stay connected</h2>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <div class="foot-input">
+                        <input type="email" class="f-email" placeholder="Enter your email here">
+                        <input type="submit" class="f-submit">
+                    </div>
+                    <div class="f-btn">
+                        <button type="button" class="foot-btn1"><a href="contact.html" target="_blank">Contact
+                                Us</a></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-botm">
+                <p>&copy; 2025 <strong> Zara Therapy Clinic.</strong> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!----------------------Footer complete------------------------>
+    <!-----------------------External JavaScript link-------------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- AOS LIBRARY JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-----------------------Internat JavaScript link-------------------->
+    <script src="ABOUT-DOCTORS/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Lora', serif;
+}
+
+:root {
+    --background-color: #e5f8e5;
+    --primary-color: #A8D5BA;
+    --accent-color: #A7C7E7;
+    --heading-color: #2C6E49;
+    --text-color: #4A4A4A;
+    --button-color: #6CA6C1;
+    --button-hover: #4F91B8;
+    --border-color: #DCEAE3;
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+
+/* DOCTORS-INFORMATION */
+.info-container {
+    max-width: 1200px;
+    min-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 3px solid #6CA6C1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    margin: 30px auto;
+    position: relative;
+    top: 140px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-container img {
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.profile-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+.profile-text p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+.specialization {
+    padding: 20px;
+    text-align: center;
+}
+
+.specialization h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+
+.specialization p {
+    padding: 10px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+.specialization ul {
+    padding: 10px;
+    list-style: none;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 50px auto;
+    background: var(--background-color);
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 30px;
+    position: relative;
+    top: 140px;
+}
+
+/* ------------------RESPONSIVE------------------- */
+/* Large Screens (1200px and above) */
+@media (min-width: 1200px) {
+
+    .info-container,
+    .contact-container {
+        max-width: 1200px;
+    }
+}
+
+/* Medium Screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .info-container,
+    .contact-container {
+        max-width: 1000px;
+    }
+}
+
+/* Small Screens (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .info-container,
+    .contact-container {
+        max-width: 90%;
+        min-width: auto;
+        flex-direction: column;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-container img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra Small Screens (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .info-container,
+    .contact-container {
+        max-width: 95%;
+        min-width: auto;
+        flex-direction: column;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-container img {
+        width: 200px;
+        margin-right: 0;
+    }
+
+    .profile-text h1 {
+        font-size: 28px;
+    }
+
+    .profile-text p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Screens (Below 576px) */
+@media (max-width: 575px) {
+
+    .info-container,
+    .contact-container {
+        width: 90%;
+        min-width: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .profile-container img {
+        width: 180px;
+        margin-right: 0;
+    }
+
+    .profile-text h1 {
+        font-size: 24px;
+    }
+
+    .profile-text p {
+        font-size: 14px;
+    }
+
+    .specialization h2 {
+        font-size: 22px;
+    }
+
+    .specialization p,
+    .specialization ul {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+/* Form Section */
+.contact-form {
+    flex: 2;
+}
+
+.contact-form h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    color: var(--text-color);
+    font-family: var(--haeding-font);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit Button */
+.contact-form button {
+    background-color: var(--button-color);
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Contact Info Section */
+.contact-info {
+    flex: 1;
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: var(--button-color);
+    font-size: 18px;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------Google fonts link------------------------>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!----------------------Font awesome icons link------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!------------------- Bootstrap CSS ------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!----------------------Style sheet------------------------>
+    <link rel="stylesheet" href="ABOUT-DOCTORS/Css/style.css">
+    <link rel="stylesheet" href="ABOUT-DOCTORS/Css/responsive.css">
+    <!----------------------Website's Icon------------------------>
+    <link rel="icon" href="Images/Zara-Logo.png">
+    <!----------------------Websites's Title------------------------>
+    <title>Zara Therapy Clinic</title>
+
+</head>
+
+<body>  <!-- back to top button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+    <!--preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!----------------------Header start------------------------>
+    <header>
+        <div class="headers">
+            <div class="head-logo">
+                <a href="index.html" target="_blank"><img src="Images/Zara-Logo.png" alt="ZTC-logo"></a>
+                <span id="brand_name"></span>
+            </div>
+            <div class="head-search">
+                <input class="inp-search" type="text" placeholder="Search">
+                <div class="s-icon">
+                    <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----------------------Nav-bar start------------------------>
+    <nav>
+        <div class="nav-bar">
+            <div class="navlink">
+                <ul class="nav-linkss ps-0 m-0">
+                    <li><a class="hov" href="index.html" target="_blank">Home</a></li>
+                    <li><a class="hov" href="about.html" target="_blank">About</a></li>
+                     <!---------Product dropdown-------->
+                     <li class="dropdown1">
+                        <a class="hov" href="products.html" target="_blank">Products</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="products.html#journals" target="_blank">Journals</a></li>
+                            <li><a href="products.html#relaxation" target="_blank">Relaxation</a></li>
+                            <li><a href="products.html#resources" target="_blank">Resources</a></li>
+                        </ul>
+                    </li>
+                    <!---------Services dropdown-------->
+                    <li class="dropdown1">
+                        <a class="hov" href="service.html" target="_blank">Services</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="service.html#family-counseling" target="_blank">Family</a></li>
+                            <li><a href="service.html#couple-counseling" target="_blank">Couple</a></li>
+                            <li><a href="service.html#teen-counseling" target="_blank">Youth</a></li>
+                        </ul>
+                    </li>
+                    <li class="hov-hide01"><a class="hov" href="discountandoffers.html" target="_blank">Offers and
+                            Discounts</a></li>
+                    <li class="hov-hide01"><a class="hov" href="contact.html" target="_blank">Contact Us</a></li>
+                    <li class="hov-hide02"><a href="discountandoffers.html" target="_blank">Best offer</a></li>
+                    <li class="hov-hide02"><a href="contact.html" target="_blank">Reach Out</a></li>
+                </ul>
+                <!---------Appoinment button-------->
+                <div class="apt-btn">
+                    <button><a href="appoinment.html" target="_blank">Appoinment</a></button>
+                </div>
+            </div>
+            <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+    <!----------------------Nav bar complete------------------------>
+    <!----------------------Terms and condition section start------------------------>
+    <section class="t-s">
+        <div class="container terms-intro" data-aos="fade-up">
+            <h1 class="heading">Terms & Condition</h1>
+            <p>By accessing and using our website and services, you agree to comply with the following terms and
+                conditions. These terms outline the rights and responsibilities of both users and Zara Therapy Clinic
+                regarding the use of our counseling services, website content, privacy policies, and limitations of
+                liability:</p>
+            </div>
+            
+            <div class="accordion container mt-5" id="termsAccordion" data-aos="fade-up" data-aos-delay="100">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#t1">
+                            1. Use of Services
+                        </button>
+                    </h2>
+                    <div id="t1" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                    <div class="accordion-body">
+                        Our therapy services are for informational and support purposes only and do not replace
+                        professional medical advice.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#t2">
+                        2. Privacy and Confidentiality
+                    </button>
+                </h2>
+                <div id="t2" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                    <div class="accordion-body">
+                        We ensure confidentiality of your data, but online communications may carry security risks.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#t3">
+                        3. Payment and Refund Policy
+                    </button>
+                </h2>
+                <div id="t3" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                    <div class="accordion-body">
+                        All payments are due at the time of service. Refunds are not available except in special
+                        circumstances.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#t4">
+                        4. Modification of Terms
+                    </button>
+                </h2>
+                <div id="t4" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                    <div class="accordion-body">
+                        We reserve the right to update these terms at any time. Continued use of our services indicates
+                        acceptance of changes.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#t5">
+                        5. Will therapy guarantee a specific result?
+                    </button>
+                </h2>
+                <div id="t5" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                    <div class="accordion-body">
+                        No. Every individual’s therapy experience is unique. While we strive to provide the best
+                        possible support, therapy outcomes vary, and we do not guarantee specific results.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#t6">
+                        6. Does Zara Therapy Clinic provide emergency care?
+                    </button>
+                </h2>
+                <div id="t6" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                    <div class="accordion-body">
+                        No. Our services are designed for mental well-being and therapy support, but they do not replace
+                        medical or emergency care. If you need urgent help, please contact 911 or an emergency service
+                        immediately.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#t7">
+                        7. Can I copy or share content from the Zara Therapy Clinic website?
+                    </button>
+                </h2>
+                <div id="t7" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                    <div class="accordion-body">
+                        No. All content on our website is for informational purposes only, and copying or distributing
+                        it without written permission is not allowed.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------Terms and condition section end------------------------>
+    <!----------------------Footer start------------------------>
+    <footer>
+        <div class="footer-container">
+            <div class="foot">
+                <div class="footer-logo">
+                    <img src="Images/Zara-Logo.png" alt="footer logo">
+                    <p>We provide professional therapy services to help you achieve mental well-being.</p>
+                    <p><strong>Our Approach:</strong> Holistic & Evidence-Based Therapy</p>
+
+                </div>
+                <div class="useful-links">
+                    <h2>Useful-links</h2>
+                    <ul class="ps-0">
+                        <li><a href="OtherPages/blog.html" target="_blank">Blogs</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="OtherPages/fees.html" target="_blank">Fees</a></li>
+                        <li><a href="OtherPages/privacypolicy.html" target="_blank">Privacy policy</a></li>
+                        <li><a href="OtherPages/FAQ.html" target="_blank">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-details">
+                    <h2>Contact Us</h2>
+                    <p class="con-p"><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Email:</strong> contact@zaratherapy.com</p>
+                    <p><strong>Location:</strong> 123 Therapy Street, City</p>
+                    <div class="social-link">
+                        <ul class="ps-0">
+                            <li><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://telegram.me/yourusername" target="_blank"><i
+                                        class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="connected">
+                    <h2>Stay connected</h2>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <div class="foot-input">
+                        <input type="email" class="f-email" placeholder="Enter your email here">
+                        <input type="submit" class="f-submit">
+                    </div>
+                    <div class="f-btn">
+                        <button type="button" class="foot-btn1"><a href="contact.html" target="_blank">Contact
+                                Us</a></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-botm">
+                <p>&copy; 2025 <strong> Zara Therapy Clinic.</strong> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!----------------------Footer complete------------------------>
+
+    <!-----------------------External JavaScript link-------------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS LIBRARY JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-----------------------Internal JavaScript link-------------------->
+    <script src="ABOUT-DOCTORS/javascript.js"></script>
+</body>
+
+</html>

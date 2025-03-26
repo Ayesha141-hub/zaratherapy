@@ -1,0 +1,472 @@
+/*======================Universal======================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*======================Universal Fonts and Colors======================*/
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Lora', serif;
+}
+
+:root {
+    --background-color: #e5f8e5;
+    --primary-color: #A8D5BA;
+    --accent-color: #A7C7E7;
+    --heading-color: #2C6E49;
+    --text-color: #4A4A4A;
+    --button-color: #6CA6C1;
+    --button-hover: #4F91B8;
+    --border-color: #DCEAE3;
+    --text-white: #ffff;
+}
+
+
+.get-intro {
+    background-image: url('/Images/background-img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 300px;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+.get-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    /* Gradient dark overlay */
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    /* Ensure text appears above overlay */
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+}
+.get-intro h1{
+    font-family: var(--heading-font);
+    font-size: 45px;
+    /* white-space: nowrap; */
+    /* padding: 0 30px; */
+}
+.get-intro p {
+    /* font-family: var(--text-font); */
+    font-size: 20px;
+}
+.btn-light {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.btn-success{
+    transition: all .4s ease-in;
+}
+
+.btn-success:hover {
+    background-color: #4c9dee;
+    color: #000;
+}
+
+.btn-primary {
+    background-color: #54c083;
+    border: none;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #52cd8a;
+}
+
+
+/* For Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .get-intro {
+        min-height: 250px;
+        padding: 40px 10px;
+    }
+
+    .get-intro h1 {
+        font-size: 35px;
+    }
+
+    .get-intro p {
+        font-size: 18px;
+    }
+
+    .btn-light {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .get-intro {
+        min-height: 200px;
+        padding: 30px 10px;
+        top: 100px;
+    }
+
+    .get-intro h1 {
+        font-size: 28px;
+    }
+
+    .get-intro p {
+        font-size: 16px;
+    }
+
+    .btn-light {
+        font-size: 0.85rem;
+        padding: 7px 15px;
+    }
+}
+
+/* For Extra Small Devices (340px and below) */
+@media screen and (max-width: 340px) {
+    .get-intro {
+        min-height: 180px;
+        padding: 20px 5px;
+        top: 80px;
+    }
+
+    .get-intro h1 {
+        font-size: 24px;
+    }
+
+    .get-intro p {
+        font-size: 14px;
+    }
+
+    .btn-light {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+.form-container {
+    position: relative;
+    top: 120px;
+    margin-top: 40px;
+    background-color: #e0ebf0;
+    border: 2px solid #b1f5ce;
+}
+.google{
+    position: relative;
+    top: 110px;
+}
+.faq-sec{
+    position: relative;
+    top: 110px;
+}
+.cta-sec{
+    position: relative;
+    top: 110px;
+}
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 35px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #5797f7, #5add93);
+    border-radius: 2px;
+}
+
+.no-focus:focus {
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+}
+
+/* For Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .form-container {
+        top: 80px;
+    }
+
+    .google,
+    .faq-sec,
+    .cta-sec {
+        top: 70px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .form-container {
+        top: 60px;
+    }
+
+    .google,
+    .faq-sec,
+    .cta-sec {
+        top: 50px;
+    }
+
+    .heading {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+}
+
+/* For Extra Small Devices (340px and below) */
+@media screen and (max-width: 340px) {
+    .form-container {
+        top: 40px;
+    }
+
+    .google,
+    .faq-sec,
+    .cta-sec {
+        top: 30px;
+    }
+
+    .heading {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+}
+/* cta section */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .cta-sec .heading {
+        font-size: 28px;
+    }
+
+    .cta-sec p {
+        font-size: 16px;
+    }
+
+    .cta-sec .d-flex {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .cta-sec .custom-btn {
+        width: 220px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .cta-sec .custom-btn i {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .cta-sec .heading {
+        font-size: 24px;
+    }
+
+    .cta-sec p {
+        font-size: 14px;
+    }
+
+    .cta-sec .d-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .cta-sec .custom-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .cta-sec .custom-btn i {
+        font-size: 1rem;
+    }
+}
+
+/* Extra Small Devices (340px and below) */
+@media screen and (max-width: 340px) {
+    .cta-sec .heading {
+        font-size: 20px;
+    }
+
+    .cta-sec p {
+        font-size: 13px;
+    }
+
+    .cta-sec .custom-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .cta-sec .custom-btn i {
+        font-size: 0.9rem;
+    }
+}
+.accordion-button {
+    background-color: #8dc0ec !important;
+    /* Soft Blue */
+    color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #6aa5d8 !important;
+    /* Ensure it stays the same */
+    color: white !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select-wrapper i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #6c757d;
+    font-size: 1rem;
+}
+.custom-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.sbtn {
+    padding: 10px 60px ;
+    color: white;
+    font-size: 18px;
+    transition: all .4s ease;
+}
+
+.sbtn:hover {
+    background-color: rgb(65, 62, 230);
+}
+
+.custom-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-btn i {
+    font-size: 1.2rem;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* For Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .sbtn {
+        padding: 10px 50px ; /* Button size adjust */
+        font-size: 16px;
+    }
+
+    .custom-btn {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    .custom-btn i {
+        font-size: 1rem;
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .sbtn {
+        padding: 0 30px ;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .custom-btn {
+        font-size: 0.85rem;
+        padding: 8px 14px;
+        gap: 5px;
+    }
+
+    .custom-btn i {
+        font-size: 0.9rem;
+    }
+
+    .custom-select-wrapper {
+        width: 100%;
+    }
+
+    .custom-select-wrapper i {
+        right: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* For Extra Small Devices (340px and below) */
+@media screen and (max-width: 340px) {
+    .sbtn {
+        padding: 5px 30px ;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .custom-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+        gap: 4px;
+    }
+
+    .custom-btn i {
+        font-size: 0.8rem;
+    }
+
+    .accordion-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

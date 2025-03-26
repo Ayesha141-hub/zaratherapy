@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------Google fonts link------------------------>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!----------------------Font awesome icons link------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!------------------- Bootstrap CSS ------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- AOS CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!----------------------Style sheet------------------------>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="stylesheet" href="Css/contact.css">
+    <!----------------------Website's Icon------------------------>
+    <link rel="icon" href="Images/Zara-Logo.png">
+    <!----------------------Websites's Title------------------------>
+    <title>Zara Therapy Clinic</title>
+
+</head>
+
+<body>
+     <!-- back to top button -->
+     <button id="back-to-top" title="Go to top">↑</button>
+     <!--preloader -->
+     <div id="preloader">
+         <div class="loader"></div>
+     </div>
+     <!----------------------Header start------------------------>
+     <header>
+         <div class="headers">
+             <div class="head-logo">
+                 <a href="index.html" target="_blank"><img src="Images/Zara-Logo.png" alt="ZTC-logo"></a>
+                 <span id="brand_name"></span>
+             </div>
+             <div class="head-search">
+                 <input class="inp-search" type="text" placeholder="Search">
+                 <div class="s-icon">
+                     <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                 </div>
+             </div>
+         </div>
+     </header>
+     <!----------------------Nav-bar start------------------------>
+     <nav>
+         <div class="nav-bar">
+             <div class="navlink">
+                 <ul class="nav-linkss ps-0 m-0">
+                     <li><a class="hov" href="index.html" target="_blank">Home</a></li>
+                     <li><a class="hov" href="about.html" target="_blank">About</a></li>
+                     <!---------Product dropdown-------->
+                     <li class="dropdown1">
+                        <a class="hov" href="products.html" target="_blank">Products</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="products.html#journals" target="_blank">Journals</a></li>
+                            <li><a href="products.html#relaxation" target="_blank">Relaxation</a></li>
+                            <li><a href="products.html#resources" target="_blank">Resources</a></li>
+                        </ul>
+                    </li>
+                    <!---------Services dropdown-------->
+                    <li class="dropdown1">
+                        <a class="hov" href="service.html" target="_blank">Services</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="service.html#family-counseling" target="_blank">Family</a></li>
+                            <li><a href="service.html#couple-counseling" target="_blank">Couple</a></li>
+                            <li><a href="service.html#teen-counseling" target="_blank">Youth</a></li>
+                        </ul>
+                    </li>
+                     <li class="hov-hide01"><a class="hov" href="discountandoffers.html" target="_blank">Offers and Discounts</a></li>
+                     <li class="hov-hide01"><a class="hov active" href="#">Contact Us</a></li>
+                     <li class="hov-hide02"><a href="discountandoffers.html" target="_blank">Best offer</a></li>
+                     <li class="hov-hide02"><a href="contact.html" target="_blank">Reach Out</a></li>
+                 </ul>
+                 <!---------Appoinment button-------->
+                 <div class="apt-btn">
+                     <button><a href="appoinment.html" target="_blank">Appoinment</a></button>
+                 </div>
+             </div>
+             <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+         </div>
+     </nav>
+     <!----------------------Nav bar complete------------------------>
+
+
+    <div class="container-fluid get-intro py-5" data-aos="fade-up">
+        <div class="overlay">
+            <h1 class="text-white text-center">Connect With Us – We're Here to Help!</h1>
+            <p class="text-white text-center">Have questions or need guidance? We're here to listen and assist you.
+                Reach out to book an appointment or get the support you need.</p>
+            <a href="appoinment.html"  target="_blank" class="btn btn-success mt-3">Book an appointment</a>
+        </div>
+    </div>
+
+
+
+    <div class="container py-5 text-center form-container" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control no-focus fs-5 " placeholder="Full Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control no-focus fs-5 " placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control no-focus fs-5 " placeholder="Phone Number" required>
+                    </div>
+                    <div class="mb-3 custom-select-wrapper">
+                        <select class="form-control no-focus fs-5 text-secondary" required>
+                            <option selected disabled>Reason for Contact</option>
+                            <option>Appointment Request</option>
+                            <option>General Inquiry</option>
+                            <option>Billing Question</option>
+                            <option>Medical Concern</option>
+                            <option>Other</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i> 
+                    </div>
+                    
+                    <div class="mb-3">
+                        <textarea class="form-control no-focus fs-5 " rows="4" placeholder="Your Message"
+                            required></textarea>
+                    </div>
+                    <div class="form-check mb-3 text-start">
+                        <input class="form-check-input no-focus" type="checkbox" id="privacyPolicy" required>
+                        <label class="form-check-label" for="privacyPolicy">I've read and accept the privacy
+                            policy</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary sbtn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Google Map -->
+    <div class="container text-center my-5 google" data-aos="fade-up">
+        <h2 class="heading">Find Us</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="400" style="border:0;"
+                allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-overlay">📍 Visit our clinic for personalized care</div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container my-5 faq-sec" data-aos="fade-up">
+        <div class="d-flex justify-content-center">
+            <h2 class="heading faq-head">Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq1">1. What are your clinic hours of operation?</button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Monday - Friday: 9:00 AM – 6:00 PM, Saturday: 10:00 AM – 4:00 PM, Sunday: Closed</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq2">2. Where is the clinic located?</button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Zara Therapy Clinic, XYZ Street, City, Country</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq3">3. Do I need an appointment before visiting?</button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Yes, appointments are recommended to ensure availability, but walk-ins are also welcome.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq4">4. What types of therapy do you offer?</button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">We offer individual therapy, couples therapy, and group therapy sessions.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq5">5. Do you accept insurance?</button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Yes, we accept most major insurance plans. Please contact us for more details.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- CTA Section -->
+    <div class="container text-center my-5 cta-sec" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="heading">Ready to take the first step towards healing?</h2>
+        <p>Call us, visit our clinic, or send us a message – we're here for you.💙</p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <button class="btn btn-primary custom-btn text-white">
+                <i class="fas fa-phone-alt"></i> Call Now
+            </button>
+            <button class="btn btn-primary custom-btn text-white">
+                <i class="fas fa-calendar-check"></i><a href="appoinment.html" target="_blank">Book an Appointment</a> 
+            </button>
+            <button class="btn btn-primary custom-btn text-white">
+                <i class="fas fa-comment-dots"></i> Send a Message
+            </button>
+        </div>
+
+
+
+    </div>
+  <!----------------------Footer start------------------------>
+  <footer>
+    <div class="footer-container">
+        <div class="foot">
+            <div class="footer-logo">
+                <img src="Images/Zara-Logo.png" alt="footer logo">
+                <p>We provide professional therapy services to help you achieve mental well-being.</p>
+                <p><strong>Our Approach:</strong> Holistic & Evidence-Based Therapy</p>
+
+            </div>
+            <div class="useful-links">
+                <h2>Useful-links</h2>
+                <ul class="ps-0">
+                    <li><a href="OtherPages/blog.html" target="_blank">Blogs</a></li>
+                    <li><a href="OtherPages/Termsandcondition.html" target="_blank">Terms and conditions</a></li>
+                    <li><a href="OtherPages/fees.html" target="_blank">Fees</a></li>
+                    <li><a href="OtherPages/privacypolicy.html" target="_blank">Privacy policy</a></li>
+                    <li><a href="OtherPages/FAQ.html" target="_blank">FAQ's</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-details">
+                <h2>Contact Us</h2>
+                <p class="con-p"><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> contact@zaratherapy.com</p>
+                <p><strong>Location:</strong> 123 Therapy Street, City</p>
+                <div class="social-link">
+                    <ul class="ps-0">
+                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://telegram.me/yourusername" target="_blank"><i
+                                    class="fa-brands fa-telegram"></i></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="connected">
+                <h2>Stay connected</h2>
+                <p>Subscribe to our newsletter for updates</p>
+                <div class="foot-input">
+                    <input type="email" class="f-email" placeholder="Enter your email here">
+                    <input type="submit" class="f-submit">
+                </div>
+                <div class="f-btn">
+                    <button type="button" class="foot-btn1"><a href="#">Contact
+                            Us</a></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-botm">
+            <p>&copy; 2025 <strong> Zara Therapy Clinic.</strong> All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!----------------------Footer complete------------------------>
+
+<!-----------------------External JavaScript link-------------------->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- AOS animation JS-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-----------------------Internal JavaScript link-------------------->
+<script src="JS/About.js"></script>
+</body>
+
+</html>

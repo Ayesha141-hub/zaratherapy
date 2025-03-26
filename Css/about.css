@@ -1,0 +1,1694 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Lora', serif;
+}
+
+:root {
+    --background-color: #e5f8e5;
+    --primary-color: #A8D5BA;
+    --accent-color: #A7C7E7;
+    --heading-color: #2C6E49;
+    --text-color: #4A4A4A;
+    --button-color: #6CA6C1;
+    --button-hover: #4F91B8;
+    --border-color: #DCEAE3;
+    --text-white: #ffff;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* HEADLINE */
+.engaging-headline {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 120px;
+}
+
+.engaging-headline img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.engaging-headline::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.headline {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ---------------RESPONSIVE--------------- */
+@media screen and (max-width: 1024px) {
+    .headline {
+        font-size: 32px;
+    }
+
+    .engaging-headline {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headline {
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .engaging-headline {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headline {
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .engaging-headline {
+        height: 250px;
+    }
+}
+
+/* DIRECTOR STATEMENT */
+.director-statement {
+    max-width: 1200px;
+    min-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: var(--background-color);
+    padding: 50px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(182, 248, 182);
+    justify-content: center;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    position: relative;
+    top: 120px;
+}
+
+.quote {
+    font-size: 26px;
+    font-style: italic;
+    max-width: 750px;
+}
+
+.author {
+    font-size: 18px;
+    max-width: 750px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* ---------------RESPONSIVE--------------- */
+@media (max-width: 1199px) {
+    .director-statement {
+        max-width: 1000px;
+        min-width: 750px;
+    }
+}
+
+@media (max-width: 991px) {
+    .director-statement {
+        max-width: 750px;
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .director-statement {
+        max-width: 600px;
+        min-width: 100%;
+        padding: 40px;
+    }
+
+    .quote {
+        font-size: 22px;
+    }
+
+    .author {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    .director-statement {
+        max-width: 300px;
+        min-width: 250px;
+        padding: 30px;
+    }
+
+    .quote {
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 14px;
+    }
+}
+
+/* MISSION SECTION */
+.mission-container {
+    max-width: 1200px;
+    min-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 3px solid #6CA6C1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    padding: 50px;
+    margin: 50px auto;
+    gap: 40px;
+    position: relative;
+    top: 130px;
+}
+
+.mission-container img {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.mission-text {
+    max-width: 750px;
+    width: 50%;
+    text-align: left;
+}
+
+.mission-text h2 {
+    font-size: 50px;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+
+.mission-text p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* ---------------RESPONSIVE--------------- */
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .mission-container {
+        max-width: 1200px;
+    }
+}
+
+/* Medium screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mission-container {
+        max-width: 1000px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .mission-container {
+        max-width: 90%;
+        min-width: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mission-container img {
+        width: 60%;
+        max-width: 350px;
+    }
+
+    .mission-text {
+        width: 80%;
+    }
+}
+
+/* Mobile Devices (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .mission-container {
+        max-width: 90%;
+        min-width: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mission-container img {
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .mission-text {
+        width: 90%;
+    }
+}
+
+/* Small Mobile Devices (up to 575px) */
+@media (max-width: 575px) {
+    .mission-container {
+        max-width: 300px;
+        min-width: 250px;
+        min-width: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .mission-container img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .mission-text {
+        width: 100%;
+    }
+
+    .mission-text h2 {
+        font-size: 40px;
+    }
+
+    .mission-text p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+/* ABOUT US SECTION */
+.about-us {
+    max-width: 1200px;
+    min-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 60px auto;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    padding: 50px;
+    position: relative;
+    top: 130px;
+    border: 2px solid rgb(175, 220, 238);
+}
+
+.about-us h2 {
+    font-family: var(--heading-font);
+    font-size: 50px;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+    font-weight: bolder;
+   text-align: center;
+}
+
+.about-us p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto 20px;
+    max-width: 750px;
+}
+
+/* ---------------RESPONSIVE--------------- */
+@media (max-width: 1199px) {
+    .about-us {
+        max-width: 1000px;
+        min-width: 768px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-us {
+        max-width: 90%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-us {
+        max-width: 90%;
+        min-width: 100%;
+        padding: 30px;
+    }
+
+    .about-us h2 {
+        font-size: 40px;
+    }
+
+    .about-us p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 479px) {
+    .about-us {
+        max-width: 300px;
+        min-width: 250px;
+        padding: 20px;
+    }
+
+    .about-us h2 {
+        font-size: 35px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+}
+
+/* OUR-STORY */
+.our-story {
+    max-width: 1200px;
+    min-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    border: 3px solid #6CA6C1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 140px;
+}
+
+.story-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.story-content h2 {
+    font-size: 40px;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+
+.story-content h2 span {
+    font-size: 38px;
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.story-content p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.story-content .cta-text {
+    font-weight: bold;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.story-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.story-image img {
+    width: 85%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------RESPONSIVE--------------- */
+@media (max-width: 1199px) {
+    .our-story {
+        max-width: 1000px;
+        min-width: 768px;
+    }
+}
+
+@media (max-width: 991px) {
+    .our-story {
+        flex-direction: column;
+        max-width: 90%;
+        min-width: auto;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .story-content h2 {
+        font-size: 36px;
+    }
+
+    .story-content h2 span {
+        font-size: 34px;
+    }
+
+    .story-content p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .story-content .cta-text {
+        font-size: 18px;
+    }
+
+    .story-image img {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .our-story {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .story-content h2 {
+        font-size: 32px;
+    }
+
+    .story-content h2 span {
+        font-size: 30px;
+    }
+
+    .story-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .story-content .cta-text {
+        font-size: 17px;
+    }
+
+    .story-image img {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 479px) {
+    .our-story {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .story-content h2 {
+        font-size: 28px;
+    }
+
+    .story-content h2 span {
+        font-size: 26px;
+    }
+
+    .story-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .story-content .cta-text {
+        font-size: 16px;
+    }
+
+    .story-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+/* MAIN-TEAM-SECTION */
+/* MEET-THE-TEAM HEADING */
+.meet-the-team {
+    max-width: 1200px;
+    min-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 150px;
+    border: 2px solid rgb(195, 243, 195);
+}
+
+.meet-the-team h1 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-size: 70px;
+}
+
+/* ---------------RESPONSIVE--------------- */
+@media (max-width: 1199px) {
+    .meet-the-team {
+        max-width: 1000px;
+        min-width: 768px;
+    }
+}
+
+@media (max-width: 991px) {
+    .meet-the-team {
+        max-width: 90%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .meet-the-team {
+        max-width: 700px;
+        min-width: 500px;
+    }
+
+    .meet-the-team h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .meet-the-team {
+        max-width: 500px;
+        min-width: 300px;
+        padding: 30px;
+    }
+
+    .meet-the-team h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .meet-the-team {
+        max-width: 300px;
+        min-width: 250px;
+        padding: 20px;
+    }
+
+    .meet-the-team h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* PSYCHOLOGISTS */
+.psychologists {
+    max-width: 1200px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    border: 3px solid #6CA6C1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 150px;
+}
+
+.psychologists h2 {
+    font-size: 40px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 5px;
+}
+
+.psychologists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.psychologist-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.psychologist-card:hover {
+    transform: scale(1.1) !important;
+    cursor: pointer;
+}
+
+.psychologist-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.psychologist-card h3 {
+    font-size: 18px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin: 10px 0;
+}
+
+.psychologist-card p {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    margin-bottom: 15px;
+}
+
+.psychologist-card button {
+    background-color: var(--button-color);
+    font-family: var(--text-font);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.psychologist-card button a {
+    text-decoration: none;
+    color: white;
+}
+
+.psychologist-card button:hover {
+    background-color: var(--button-hover);
+}
+
+/* -----------RESPONSIVE------------ */
+@media (max-width: 1199px) {
+    .psychologists {
+        max-width: 90%;
+        min-width: auto;
+        padding: 30px;
+    }
+
+    .psychologists-container {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .psychologist-card:hover {
+        transform: scale(1.02) !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 991px) {
+    .psychologists {
+        padding: 20px;
+    }
+
+    .psychologists-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .psychologist-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .psychologists {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .psychologists-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+    }
+
+    .psychologist-card h3 {
+        font-size: 16px;
+    }
+
+    .psychologist-card p {
+        font-size: 12px;
+    }
+
+    .psychologist-card button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .psychologists {
+        padding: 15px;
+    }
+
+    .psychologists-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    .psychologist-card {
+        padding: 10px;
+    }
+
+    .psychologist-card h3 {
+        font-size: 14px;
+    }
+
+    .psychologist-card p {
+        font-size: 12px;
+    }
+
+    .psychologist-card button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+
+
+/* COUNSELLORS */
+.counsellors {
+    max-width: 1200px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border: 3px solid #6CA6C1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 150px;
+}
+
+.counsellors h2 {
+    font-size: 40px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 5px;
+}
+
+.counsellors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.counsellors-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.counsellors-card:hover {
+    transform: scale(1.1) !important;
+    cursor: pointer;
+}
+
+.counsellors-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.counsellors-card h3 {
+    font-size: 18px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin: 10px 0;
+}
+
+.counsellors-card p {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    margin-bottom: 15px;
+}
+
+.counsellors-card button {
+    background-color: var(--button-color);
+    font-family: var(--text-font);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.counsellors-card button a {
+    text-decoration: none;
+    color: white;
+}
+
+.counsellors-card button:hover {
+    background-color: var(--button-hover);
+}
+
+/* -----------RESPONSIVE------------ */
+@media (max-width: 1199px) {
+    .counsellors {
+        max-width: 90%;
+        min-width: auto;
+        padding: 30px;
+    }
+
+    .counsellors-container {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counsellors-card:hover {
+        transform: scale(1.02) !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 991px) {
+    .counsellors {
+        padding: 20px;
+    }
+
+    .counsellors-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .counsellors-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .counsellors {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .counsellors-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+    }
+
+    .counsellors-card h3 {
+        font-size: 16px;
+    }
+
+    .counsellors-card p {
+        font-size: 12px;
+    }
+
+    .counsellors-card button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .counsellors {
+        padding: 15px;
+    }
+
+    .counsellors-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    .counsellors-card {
+        padding: 10px;
+    }
+
+    .counsellors-card h3 {
+        font-size: 14px;
+    }
+
+    .counsellors-card p {
+        font-size: 12px;
+    }
+
+    .counsellors-card button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+
+/* COUPLES COUNSELLORS */
+.couples-counsellors {
+    max-width: 1200px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    border: 3px solid #6CA6C1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 150px;
+}
+
+.couples-counsellors h2 {
+    font-size: 40px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 5px;
+}
+
+.couples-counsellors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.couples-counsellors-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.couples-counsellors-card:hover {
+    transform: scale(1.1) !important;
+    cursor: pointer;
+}
+
+.couples-counsellors-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.couples-counsellors-card h3 {
+    font-size: 18px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin: 10px 0;
+}
+
+.couples-counsellors-card p {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    margin-bottom: 15px;
+}
+
+.couples-counsellors-card button {
+    background-color: var(--button-color);
+    font-family: var(--text-font);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.couples-counsellors-card button a {
+    text-decoration: none;
+    color: white;
+}
+
+.couples-counsellors-card button:hover {
+    background-color: var(--button-hover);
+}
+
+/* -----------RESPONSIVE------------ */
+@media (max-width: 1199px) {
+    .couples-counsellors {
+        max-width: 90%;
+        min-width: auto;
+        padding: 30px;
+    }
+
+    .couples-counsellors-container {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .couples-counsellors-card:hover {
+        transform: scale(1.02) !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 991px) {
+    .couples-counsellors {
+        padding: 20px;
+    }
+
+    .couples-counsellors-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .couples-counsellors-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .couples-counsellors {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .couples-counsellors-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+    }
+
+    .couples-counsellors-card h3 {
+        font-size: 16px;
+    }
+
+    .couples-counsellors-card p {
+        font-size: 12px;
+    }
+
+    .couples-counsellors-card button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .couples-counsellors {
+        padding: 15px;
+    }
+
+    .couples-counsellors-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    .couples-counsellors-card {
+        padding: 10px;
+    }
+
+    .couples-counsellors-card h3 {
+        font-size: 14px;
+    }
+
+    .couples-counsellors-card p {
+        font-size: 12px;
+    }
+
+    .couples-counsellors-card button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+
+/* THERAPISTS */
+.therapists {
+    max-width: 1200px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border: 3px solid #6CA6C1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 160px;
+}
+
+.therapists h2 {
+    font-size: 40px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 5px;
+}
+
+.therapists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.therapists-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.therapists-card:hover {
+    transform: scale(1.1) !important;
+    cursor: pointer;
+}
+
+.therapists-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.therapists-card h3 {
+    font-size: 18px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin: 10px 0;
+}
+
+.therapists-card p {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    margin-bottom: 15px;
+}
+
+.therapists-card button {
+    background-color: var(--button-color);
+    font-family: var(--text-font);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.therapists-card button a {
+    text-decoration: none;
+    color: white;
+}
+
+.therapists-card button:hover {
+    background-color: var(--button-hover);
+}
+
+/* -----------RESPONSIVE------------ */
+@media (max-width: 1199px) {
+    .therapists {
+        max-width: 90%;
+        min-width: auto;
+        padding: 30px;
+    }
+
+    .therapists-container {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .therapists-card:hover {
+        transform: scale(1.02) !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 991px) {
+    .therapists {
+        padding: 20px;
+    }
+
+    .therapists-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .therapists-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .therapists {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .therapists-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+    }
+
+    .therapists-card h3 {
+        font-size: 16px;
+    }
+
+    .therapists-card p {
+        font-size: 12px;
+    }
+
+    .therapists-card button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .therapists {
+        padding: 15px;
+    }
+
+    .therapists-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    .therapists-card {
+        padding: 10px;
+    }
+
+    .therapists-card h3 {
+        font-size: 14px;
+    }
+
+    .therapists-card p {
+        font-size: 12px;
+    }
+
+    .therapists-card button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+
+/* SPECIALISTS THERAPISTS */
+.s-therapists {
+    max-width: 1200px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    border: 3px solid #6CA6C1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 170px;
+}
+
+.s-therapists h2 {
+    font-size: 40px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 5px;
+}
+
+.s-therapists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    overflow: visible;
+}
+
+.s-therapists-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-therapists-card:hover {
+    transform: scale(1.03) !important;
+    cursor: pointer;
+}
+
+.s-therapists-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.s-therapists-card h3 {
+    font-size: 18px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin: 10px 0;
+}
+
+.s-therapists-card p {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    margin-bottom: 15px;
+}
+
+.s-therapists-card button {
+    background-color: var(--button-color);
+    font-family: var(--text-font);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.s-therapists-card button a {
+    text-decoration: none;
+    color: white;
+}
+
+.s-therapists-card button:hover {
+    background-color: var(--button-hover);
+}
+
+/* -----------RESPONSIVE------------ */
+@media (max-width: 1199px) {
+    .s-therapists {
+        max-width: 90%;
+        min-width: auto;
+        padding: 30px;
+    }
+
+    .s-therapists-container {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .s-therapists-card:hover {
+        transform: scale(1.02) !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 991px) {
+    .s-therapists {
+        padding: 20px;
+    }
+
+    .s-therapists-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .s-therapists-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .s-therapists {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .s-therapists-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+    }
+
+    .s-therapists-card h3 {
+        font-size: 16px;
+    }
+
+    .s-therapists-card p {
+        font-size: 12px;
+    }
+
+    .s-therapists-card button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .s-therapists {
+        padding: 15px;
+    }
+
+    .s-therapists-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    .s-therapists-card {
+        padding: 10px;
+    }
+
+    .s-therapists-card h3 {
+        font-size: 14px;
+    }
+
+    .s-therapists-card p {
+        font-size: 12px;
+    }
+
+    .s-therapists-card button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+
+/* WHY-CHOOSE-US */
+.why-choose-us {
+    max-width: 1200px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 170px;
+    border: 2px solid rgb(188, 225, 240);
+}
+
+.section-title {
+    font-size: 40px;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+.section-subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: var(--text-font);
+    color: var(--heading-color);
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.feature-box {
+    background: white;
+    border: 3px solid #208152;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+/* Call-to-Action */
+.cta-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cta-section p {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: var(--text-font);
+    color: var(--heading-color);
+}
+
+.cta-button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--button-color);
+    font-size: 18px;
+    font-family: var(--heading-font);
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-top: 2%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-3px);
+}
+
+/* -----------RESPONSIVE------------ */
+@media (max-width: 1199px) {
+    .why-choose-us {
+        max-width: 90%;
+        min-width: auto;
+        padding: 30px;
+    }
+
+    .features-container {
+        max-width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .why-choose-us {
+        max-width: 90%;
+        min-width: auto;
+        padding: 25px;
+    }
+
+    .features-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .why-choose-us {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+    }
+
+    .feature-box {
+        padding: 15px;
+    }
+
+    .cta-section p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .why-choose-us {
+        max-width: 90%;
+        min-width: auto;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-box {
+        padding: 10px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
