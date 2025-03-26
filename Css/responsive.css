@@ -595,17 +595,29 @@
     }
 
     .nav-bar {
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         height: auto;
         padding: 5px 0px;
     }
-
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
     .menu-toggle {
         display: block;
         font-size: 30px;
         margin-right: 30px;
     }
+    .section {
+        padding: 20px;
+    }
 
+    .button {
+        width: 100%;
+        text-align: center;
+    }
     #brand_name {
         display: none;
     }
@@ -1022,9 +1034,15 @@
     .service {
         height: 250px;
     }
-    .main-heading {
+    /* .main-heading {
         width: 90%;
         top: 80px;
+    } */
+    .main-heading {
+        width: 100%;
+        font-size: 40px;
+        padding: 30px;
+        top: 60px;
     }
     .main-heading h1 {
         padding: 30px;
